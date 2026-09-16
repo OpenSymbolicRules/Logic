@@ -10,35 +10,35 @@
   },
   "rules": [
     {
-      "id": 1,
+      "id": 6,
       "pattern": ["Or", "False", "p_"],
       "constraints": [],
       "result": "p_",
       "description": "Disjunction with false is the original proposition."
     },
     {
-      "id": 2,
+      "id": 7,
       "pattern": ["And", "True", "p_"],
       "constraints": [],
       "result": "p_",
       "description": "Conjunction with true is the original proposition."
     },
     {
-      "id": 3,
+      "id": 8,
       "pattern": ["Or", "p_", "True"],
       "constraints": [],
       "result": "True",
       "description": "Disjunction with true is true."
     },
     {
-      "id": 4,
+      "id": 9,
       "pattern": ["Or", "True", "p_"],
       "constraints": [],
       "result": "True",
       "description": "Disjunction with true is true."
     },
     {
-      "id": 5,
+      "id": 10,
       "pattern": ["And", "False", "p_"],
       "constraints": [],
       "result": "False",

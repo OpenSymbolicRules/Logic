@@ -21,6 +21,18 @@ The negation-normal-form rules may increase expression size, but strictly move
 negation toward atomic propositions. They are therefore a normalizing pass,
 not a general-purpose size-reducing simplification.
 
+## CNF and DNF profiles
+
+The default manifest does not include distributivity. Select the `to_cnf`
+profile to distribute `Or` over `And`, or `to_dnf` to distribute `And` over
+`Or`. Both profiles are complete manifests declared in `rules/meta.json` and
+include the prerequisite simplification, connective-expansion, and
+negation-normal-form rules.
+
+The profiles operate on binary expression trees and include both operand orders
+for distributivity. Consumers that want a canonical representation should also
+canonicalize associative and commutative `And` and `Or` nodes.
+
 Rules are deliberately directed from a larger expression to a smaller one.
 For example, the inverse of double negation is not included: adding it would
 allow an engine to rewrite `p` to `¬¬p` indefinitely.

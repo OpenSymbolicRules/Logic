@@ -1,0 +1,25 @@
+{
+  "$schema": "open-symbolic-rules/v0.1",
+  "section": "5.1",
+  "title": "Conjunctive Normal Form Distribution",
+  "semantics": {
+    "And": "openmath:logic1#and",
+    "Or": "openmath:logic1#or"
+  },
+  "rules": [
+    {
+      "id": 24,
+      "pattern": ["Or", "p_", ["And", "q_", "r_"]],
+      "constraints": [],
+      "result": ["And", ["Or", "p_", "q_"], ["Or", "p_", "r_"]],
+      "description": "Distribute disjunction over conjunction to construct CNF."
+    },
+    {
+      "id": 25,
+      "pattern": ["Or", ["And", "q_", "r_"], "p_"],
+      "constraints": [],
+      "result": ["And", ["Or", "q_", "p_"], ["Or", "r_", "p_"]],
+      "description": "Distribute disjunction over conjunction to construct CNF."
+    }
+  ]
+}

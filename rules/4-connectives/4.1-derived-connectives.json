@@ -11,14 +11,14 @@
   },
   "rules": [
     {
-      "id": 1,
+      "id": 22,
       "pattern": ["Implies", "p_", "q_"],
       "constraints": [],
       "result": ["Or", ["Not", "p_"], "q_"],
       "description": "An implication is a disjunction with a negated antecedent."
     },
     {
-      "id": 2,
+      "id": 23,
       "pattern": ["Equivalent", "p_", "q_"],
       "constraints": [],
       "result": [

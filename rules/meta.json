@@ -12,9 +12,36 @@
     "3-absorption/3.1-absorption.json",
     "4-connectives/4.1-derived-connectives.json"
   ],
-  "rule_count": 23,
-  "test_count": 23,
+  "profiles": {
+    "to_cnf": {
+      "description": "Complete manifest for conjunctive normal form.",
+      "load_order": [
+        "1-identities/1.1-boolean-identities.json",
+        "1-identities/1.2-boolean-symmetry.json",
+        "2-negation/2.1-complements.json",
+        "2-negation/2.2-negation-normal-form.json",
+        "3-absorption/3.1-absorption.json",
+        "4-connectives/4.1-derived-connectives.json",
+        "5-normal-forms/5.1-to-cnf.json"
+      ]
+    },
+    "to_dnf": {
+      "description": "Complete manifest for disjunctive normal form.",
+      "load_order": [
+        "1-identities/1.1-boolean-identities.json",
+        "1-identities/1.2-boolean-symmetry.json",
+        "2-negation/2.1-complements.json",
+        "2-negation/2.2-negation-normal-form.json",
+        "3-absorption/3.1-absorption.json",
+        "4-connectives/4.1-derived-connectives.json",
+        "5-normal-forms/5.2-to-dnf.json"
+      ]
+    }
+  },
+  "rule_count": 27,
+  "test_count": 27,
   "feature_flags": {
-    "boolean_simplification": true
+    "boolean_simplification": true,
+    "normal_forms": true
   }
 }

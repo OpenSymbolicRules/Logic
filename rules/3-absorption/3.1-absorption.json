@@ -8,28 +8,28 @@
   },
   "rules": [
     {
-      "id": 1,
+      "id": 18,
       "pattern": ["Or", "p_", ["And", "p_", "q_"]],
       "constraints": [],
       "result": "p_",
       "description": "A proposition absorbs its conjunction with another proposition."
     },
     {
-      "id": 2,
+      "id": 19,
       "pattern": ["Or", ["And", "p_", "q_"], "p_"],
       "constraints": [],
       "result": "p_",
       "description": "A proposition absorbs its conjunction with another proposition."
     },
     {
-      "id": 3,
+      "id": 20,
       "pattern": ["And", "p_", ["Or", "p_", "q_"]],
       "constraints": [],
       "result": "p_",
       "description": "A proposition absorbs its disjunction with another proposition."
     },
     {
-      "id": 4,
+      "id": 21,
       "pattern": ["And", ["Or", "p_", "q_"], "p_"],
       "constraints": [],
       "result": "p_",

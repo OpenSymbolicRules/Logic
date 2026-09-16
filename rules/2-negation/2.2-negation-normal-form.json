@@ -11,28 +11,28 @@
   },
   "rules": [
     {
-      "id": 1,
+      "id": 14,
       "pattern": ["Not", ["And", "p_", "q_"]],
       "constraints": [],
       "result": ["Or", ["Not", "p_"], ["Not", "q_"]],
       "description": "De Morgan's law for the negation of a conjunction."
     },
     {
-      "id": 2,
+      "id": 15,
       "pattern": ["Not", ["Or", "p_", "q_"]],
       "constraints": [],
       "result": ["And", ["Not", "p_"], ["Not", "q_"]],
       "description": "De Morgan's law for the negation of a disjunction."
     },
     {
-      "id": 3,
+      "id": 16,
       "pattern": ["Not", "True"],
       "constraints": [],
       "result": "False",
       "description": "The negation of true is false."
     },
     {
-      "id": 4,
+      "id": 17,
       "pattern": ["Not", "False"],
       "constraints": [],
       "result": "True",

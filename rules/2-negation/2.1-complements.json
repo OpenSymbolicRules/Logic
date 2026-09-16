@@ -11,21 +11,21 @@
   },
   "rules": [
     {
-      "id": 1,
+      "id": 11,
       "pattern": ["Not", ["Not", "p_"]],
       "constraints": [],
       "result": "p_",
       "description": "Negating a proposition twice returns that proposition."
     },
     {
-      "id": 2,
+      "id": 12,
       "pattern": ["Or", "p_", ["Not", "p_"]],
       "constraints": [],
       "result": "True",
       "description": "A proposition disjoined with its complement is true."
     },
     {
-      "id": 3,
+      "id": 13,
       "pattern": ["And", "p_", ["Not", "p_"]],
       "constraints": [],
       "result": "False",

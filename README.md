@@ -9,6 +9,7 @@ uses OSR expression syntax and declares its operator meaning with OpenMath.
 - Boolean identity and idempotence rules.
 - Negation normal form and complement rules.
 - Implication and equivalence expansion to core connectives.
+- Explicit `to_cnf` and `to_dnf` profiles for distributive normalisation.
 - Executable fixtures for every rule.
 
 The current rules are intentionally oriented towards smaller expressions. This

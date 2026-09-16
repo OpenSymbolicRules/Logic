@@ -1,0 +1,23 @@
+{
+  "$schema": "open-symbolic-rules/v0.1",
+  "section": "5.2",
+  "title": "Disjunctive Normal Form Tests",
+  "tests": [
+    {
+      "id": 1,
+      "expression": ["And", "p", ["Or", "q", "r"]],
+      "variable": "p",
+      "expected_result": ["Or", ["And", "p", "q"], ["And", "p", "r"]],
+      "num_steps": 1,
+      "grade": "A"
+    },
+    {
+      "id": 2,
+      "expression": ["And", ["Or", "q", "r"], "p"],
+      "variable": "p",
+      "expected_result": ["Or", ["And", "q", "p"], ["And", "r", "p"]],
+      "num_steps": 1,
+      "grade": "A"
+    }
+  ]
+}
