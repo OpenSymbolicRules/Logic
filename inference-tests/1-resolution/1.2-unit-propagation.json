@@ -1,0 +1,47 @@
+{
+  "$schema": "open-symbolic-rules/v0.1/inference-test",
+  "section": "1.2",
+  "title": "Unit Resolution Tests",
+  "tests": [
+    {
+      "id": 1,
+      "premises": [
+        "p",
+        ["Or", ["Not", "p"], "q"]
+      ],
+      "expected_conclusion": "q",
+      "num_steps": 1,
+      "grade": "A"
+    },
+    {
+      "id": 2,
+      "premises": [
+        ["Not", "p"],
+        ["Or", "p", "q"]
+      ],
+      "expected_conclusion": "q",
+      "num_steps": 1,
+      "grade": "A"
+    },
+    {
+      "id": 3,
+      "premises": [
+        ["Or", "q", ["Not", "p"]],
+        "p"
+      ],
+      "expected_conclusion": "q",
+      "num_steps": 1,
+      "grade": "A"
+    },
+    {
+      "id": 4,
+      "premises": [
+        ["Or", "q", "p"],
+        ["Not", "p"]
+      ],
+      "expected_conclusion": "q",
+      "num_steps": 1,
+      "grade": "A"
+    }
+  ]
+}

@@ -7,6 +7,10 @@ For example, from `p ∨ q` and `¬p ∨ r`, binary resolution derives `q ∨ r`
 The pivot proposition and its negation are complementary; the remaining
 literals form the resolvent.
 
+Unit resolution is also available. From `p` and `¬p ∨ q`, it derives `q`.
+The rule file includes both literal positions in binary clauses and both premise
+orders so consumers do not need to reorder a clause before unit propagation.
+
 Use the `to_cnf` profile before resolution so that a formula is represented as
 a conjunction of disjunctive clauses. The current profile covers binary
 clauses represented by OSR's binary `Or` trees. Clause-set canonicalisation,

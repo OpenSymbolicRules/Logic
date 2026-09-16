@@ -1,0 +1,52 @@
+{
+  "$schema": "open-symbolic-rules/v0.1/inference",
+  "section": "1.2",
+  "title": "Unit Resolution",
+  "system": "propositional-resolution",
+  "semantics": {
+    "Or": "openmath:logic1#or",
+    "Not": "openmath:logic1#not"
+  },
+  "inferences": [
+    {
+      "id": 3,
+      "premises": [
+        "p_",
+        ["Or", ["Not", "p_"], "q_"]
+      ],
+      "constraints": [],
+      "conclusion": "q_",
+      "description": "Resolve a positive unit clause against a negative literal in a binary clause."
+    },
+    {
+      "id": 4,
+      "premises": [
+        ["Not", "p_"],
+        ["Or", "p_", "q_"]
+      ],
+      "constraints": [],
+      "conclusion": "q_",
+      "description": "Resolve a negative unit clause against a positive literal in a binary clause."
+    },
+    {
+      "id": 5,
+      "premises": [
+        ["Or", "q_", ["Not", "p_"]],
+        "p_"
+      ],
+      "constraints": [],
+      "conclusion": "q_",
+      "description": "Resolve a positive unit clause when the complementary literal is on the right."
+    },
+    {
+      "id": 6,
+      "premises": [
+        ["Or", "q_", "p_"],
+        ["Not", "p_"]
+      ],
+      "constraints": [],
+      "conclusion": "q_",
+      "description": "Resolve a negative unit clause when the complementary literal is on the right."
+    }
+  ]
+}
