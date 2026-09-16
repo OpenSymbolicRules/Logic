@@ -57,3 +57,8 @@ just verify
 The validation command checks the OSR JSON Schemas and validates the rule and
 test data against them. The semantic verifier exhaustively checks the supported
 propositional rules and resolution inferences over Boolean valuations.
+
+## License
+
+This repository is licensed under the [MIT License](LICENSE). OpenMath
+identifiers are referenced for semantic interoperability; see [NOTICE.md](NOTICE.md).

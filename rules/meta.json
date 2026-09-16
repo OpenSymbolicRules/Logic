@@ -4,6 +4,7 @@
   "domain": "logic",
   "title": "Open Symbolic Rules - Logic",
   "description": "Boolean simplification and propositional logic rules.",
+  "license": "MIT",
   "load_order": [
     "1-identities/1.1-boolean-identities.json",
     "1-identities/1.2-boolean-symmetry.json",
