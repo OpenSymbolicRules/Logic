@@ -50,7 +50,10 @@ Initialize submodules and validate all JSON files:
 ```bash
 git submodule update --init --recursive
 just validate
+just test
+just verify
 ```
 
 The validation command checks the OSR JSON Schemas and validates the rule and
-test data against them.
+test data against them. The semantic verifier exhaustively checks the supported
+propositional rules and resolution inferences over Boolean valuations.

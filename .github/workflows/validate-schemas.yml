@@ -36,3 +36,7 @@ jobs:
         run: |
           duplicate_ids="$(find rules -type f -name '*.json' ! -path 'rules/meta.json' -print0 | xargs -0 -r jq -r '.rules[].id' | sort -n | uniq -d)"
           test -z "$duplicate_ids" || { echo "Duplicate rule identifiers: $duplicate_ids" >&2; exit 1; }
+      - name: Test semantic verifier
+        run: python3 scripts/test_verify_propositional_semantics.py
+      - name: Verify propositional semantics
+        run: python3 scripts/verify_propositional_semantics.py
