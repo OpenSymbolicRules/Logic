@@ -1,0 +1,47 @@
+{
+  "$schema": "open-symbolic-rules/v0.1",
+  "section": "4.2",
+  "title": "Compound Boolean Connective Tests",
+  "tests": [
+    {
+      "id": 1,
+      "expression": ["Nand", "p", "q"],
+      "variable": "p",
+      "expected_result": ["Not", ["And", "p", "q"]],
+      "num_steps": 1,
+      "grade": "A"
+    },
+    {
+      "id": 2,
+      "expression": ["Nor", "p", "q"],
+      "variable": "p",
+      "expected_result": ["Not", ["Or", "p", "q"]],
+      "num_steps": 1,
+      "grade": "A"
+    },
+    {
+      "id": 3,
+      "expression": ["Xor", "p", "q"],
+      "variable": "p",
+      "expected_result": [
+        "Or",
+        ["And", "p", ["Not", "q"]],
+        ["And", ["Not", "p"], "q"]
+      ],
+      "num_steps": 1,
+      "grade": "A"
+    },
+    {
+      "id": 4,
+      "expression": ["Xnor", "p", "q"],
+      "variable": "p",
+      "expected_result": [
+        "And",
+        ["Or", ["Not", "p"], "q"],
+        ["Or", ["Not", "q"], "p"]
+      ],
+      "num_steps": 1,
+      "grade": "A"
+    }
+  ]
+}

@@ -6,6 +6,7 @@
   and absorption.
 - [x] Negation normal form for binary conjunction and disjunction.
 - [x] Expansion of implication and equivalence to core Boolean connectives.
+- [x] Expansion of NAND, NOR, XOR, and XNOR to core Boolean connectives.
 
 ## Next
 

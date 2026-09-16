@@ -12,6 +12,7 @@ and safe to apply repeatedly:
 - negation normal form: De Morgan's laws push `Not` through `And` and `Or`.
 - derived connectives: implication and equivalence reduce to `And`, `Or`, and
   `Not`.
+- compound connectives: NAND, NOR, XOR, and XNOR reduce to core connectives.
 
 For binary `And` and `Or` trees, rules whose result depends on an operand
 position are included in both operand orders. A consumer therefore does not

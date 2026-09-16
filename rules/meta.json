@@ -10,7 +10,8 @@
     "2-negation/2.1-complements.json",
     "2-negation/2.2-negation-normal-form.json",
     "3-absorption/3.1-absorption.json",
-    "4-connectives/4.1-derived-connectives.json"
+    "4-connectives/4.1-derived-connectives.json",
+    "4-connectives/4.2-compound-connectives.json"
   ],
   "profiles": {
     "to_cnf": {
@@ -22,6 +23,7 @@
         "2-negation/2.2-negation-normal-form.json",
         "3-absorption/3.1-absorption.json",
         "4-connectives/4.1-derived-connectives.json",
+        "4-connectives/4.2-compound-connectives.json",
         "5-normal-forms/5.1-to-cnf.json"
       ]
     },
@@ -34,12 +36,13 @@
         "2-negation/2.2-negation-normal-form.json",
         "3-absorption/3.1-absorption.json",
         "4-connectives/4.1-derived-connectives.json",
+        "4-connectives/4.2-compound-connectives.json",
         "5-normal-forms/5.2-to-dnf.json"
       ]
     }
   },
-  "rule_count": 27,
-  "test_count": 27,
+  "rule_count": 31,
+  "test_count": 31,
   "feature_flags": {
     "boolean_simplification": true,
     "normal_forms": true

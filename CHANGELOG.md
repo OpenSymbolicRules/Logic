@@ -14,4 +14,5 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 - Symmetric identity and annihilation rules, plus Boolean absorption rules.
 - De Morgan, Boolean constant-negation, implication, and equivalence rules.
 - Explicit `to_cnf` and `to_dnf` profiles with distributivity rules.
+- Expansion rules for NAND, NOR, XOR, and XNOR.
 - JSON Schema validation, executable fixtures, and Boolean-rule documentation.
