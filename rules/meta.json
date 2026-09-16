@@ -47,7 +47,8 @@
       "description": "Binary propositional resolution over clauses prepared by the to_cnf profile.",
       "load_order": [
         "inferences/1-resolution/1.1-binary-propositional-resolution.json",
-        "inferences/1-resolution/1.2-unit-propagation.json"
+        "inferences/1-resolution/1.2-unit-propagation.json",
+        "inferences/1-resolution/1.3-unit-conflict.json"
       ]
     }
   },

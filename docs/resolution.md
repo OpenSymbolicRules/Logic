@@ -11,6 +11,9 @@ Unit resolution is also available. From `p` and `¬p ∨ q`, it derives `q`.
 The rule file includes both literal positions in binary clauses and both premise
 orders so consumers do not need to reorder a clause before unit propagation.
 
+Complementary unit clauses derive `False`. This is the base contradiction used
+by a resolution refutation and provides a compact inconsistency certificate.
+
 Use the `to_cnf` profile before resolution so that a formula is represented as
 a conjunction of disjunctive clauses. The current profile covers binary
 clauses represented by OSR's binary `Or` trees. Clause-set canonicalisation,

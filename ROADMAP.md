@@ -14,6 +14,7 @@
   distributivity and remain separate from size-reducing simplification.
 - [x] Add binary propositional resolution as an inference profile.
 - [x] Add unit resolution for binary clauses.
+- [x] Add unit-conflict derivation for propositional refutation.
 - [x] Specify safe bound-variable representation and add quantifier-negation
   rules from the OpenMath `quant1` content dictionary.
 

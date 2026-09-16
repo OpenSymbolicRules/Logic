@@ -1,0 +1,27 @@
+{
+  "$schema": "open-symbolic-rules/v0.1/inference-test",
+  "section": "1.3",
+  "title": "Unit Conflict Tests",
+  "tests": [
+    {
+      "id": 1,
+      "premises": [
+        "p",
+        ["Not", "p"]
+      ],
+      "expected_conclusion": "False",
+      "num_steps": 1,
+      "grade": "A"
+    },
+    {
+      "id": 2,
+      "premises": [
+        ["Not", "p"],
+        "p"
+      ],
+      "expected_conclusion": "False",
+      "num_steps": 1,
+      "grade": "A"
+    }
+  ]
+}

@@ -1,0 +1,32 @@
+{
+  "$schema": "open-symbolic-rules/v0.1/inference",
+  "section": "1.3",
+  "title": "Unit Conflict",
+  "system": "propositional-resolution",
+  "semantics": {
+    "Not": "openmath:logic1#not",
+    "False": "openmath:logic1#false"
+  },
+  "inferences": [
+    {
+      "id": 7,
+      "premises": [
+        "p_",
+        ["Not", "p_"]
+      ],
+      "constraints": [],
+      "conclusion": "False",
+      "description": "Complementary unit clauses derive a contradiction."
+    },
+    {
+      "id": 8,
+      "premises": [
+        ["Not", "p_"],
+        "p_"
+      ],
+      "constraints": [],
+      "conclusion": "False",
+      "description": "Complementary unit clauses derive a contradiction regardless of premise order."
+    }
+  ]
+}

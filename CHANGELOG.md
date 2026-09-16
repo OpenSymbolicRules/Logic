@@ -17,6 +17,7 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 - Expansion rules for NAND, NOR, XOR, and XNOR.
 - Binary propositional resolution inference profile and inference fixtures.
 - Unit-resolution inference rules for binary clauses and both clause orders.
+- Unit-conflict inference rules deriving `False` as a resolution certificate.
 - OpenMath `quant1` universal and existential quantifier-negation rules.
 - Exhaustive propositional semantic verification of rules, fixtures, and
   resolution inferences in CI.
