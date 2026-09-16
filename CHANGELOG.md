@@ -16,4 +16,5 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 - Explicit `to_cnf` and `to_dnf` profiles with distributivity rules.
 - Expansion rules for NAND, NOR, XOR, and XNOR.
 - Binary propositional resolution inference profile and inference fixtures.
+- OpenMath `quant1` universal and existential quantifier-negation rules.
 - JSON Schema validation, executable fixtures, and Boolean-rule documentation.

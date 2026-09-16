@@ -1,0 +1,26 @@
+{
+  "$schema": "open-symbolic-rules/v0.1",
+  "section": "6.1",
+  "title": "Quantifier Negation",
+  "semantics": {
+    "Exists": "openmath:quant1#exists",
+    "Forall": "openmath:quant1#forall",
+    "Not": "openmath:logic1#not"
+  },
+  "rules": [
+    {
+      "id": 32,
+      "pattern": ["Not", ["Forall", ["xs__"], "p_"]],
+      "constraints": [],
+      "result": ["Exists", ["xs__"], ["Not", "p_"]],
+      "description": "The negation of a universal quantifier is an existential quantifier of the negated body."
+    },
+    {
+      "id": 33,
+      "pattern": ["Not", ["Exists", ["xs__"], "p_"]],
+      "constraints": [],
+      "result": ["Forall", ["xs__"], ["Not", "p_"]],
+      "description": "The negation of an existential quantifier is a universal quantifier of the negated body."
+    }
+  ]
+}

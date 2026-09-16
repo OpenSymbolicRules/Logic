@@ -11,7 +11,8 @@
     "2-negation/2.2-negation-normal-form.json",
     "3-absorption/3.1-absorption.json",
     "4-connectives/4.1-derived-connectives.json",
-    "4-connectives/4.2-compound-connectives.json"
+    "4-connectives/4.2-compound-connectives.json",
+    "6-quantifiers/6.1-negation.json"
   ],
   "profiles": {
     "to_cnf": {
@@ -49,11 +50,12 @@
       ]
     }
   },
-  "rule_count": 31,
-  "test_count": 31,
+  "rule_count": 33,
+  "test_count": 33,
   "feature_flags": {
     "boolean_simplification": true,
     "normal_forms": true,
-    "propositional_inference": true
+    "propositional_inference": true,
+    "quantified_logic": true
   }
 }

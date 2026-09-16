@@ -1,0 +1,23 @@
+{
+  "$schema": "open-symbolic-rules/v0.1",
+  "section": "6.1",
+  "title": "Quantifier Negation Tests",
+  "tests": [
+    {
+      "id": 1,
+      "expression": ["Not", ["Forall", ["x"], ["And", "x", "q"]]],
+      "variable": "x",
+      "expected_result": ["Exists", ["x"], ["Not", ["And", "x", "q"]]],
+      "num_steps": 1,
+      "grade": "A"
+    },
+    {
+      "id": 2,
+      "expression": ["Not", ["Exists", ["x"], ["Or", "x", "q"]]],
+      "variable": "x",
+      "expected_result": ["Forall", ["x"], ["Not", ["Or", "x", "q"]]],
+      "num_steps": 1,
+      "grade": "A"
+    }
+  ]
+}

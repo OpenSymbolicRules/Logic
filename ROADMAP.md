@@ -13,5 +13,10 @@
 - [x] Define explicit `to_cnf` and `to_dnf` normalization profiles. These use
   distributivity and remain separate from size-reducing simplification.
 - [x] Add binary propositional resolution as an inference profile.
-- [ ] Specify safe bound-variable representation before adding quantifier rules
-  from the OpenMath `quant1` content dictionary.
+- [x] Specify safe bound-variable representation and add quantifier-negation
+  rules from the OpenMath `quant1` content dictionary.
+
+## Later
+
+- [ ] Specify capture-avoiding substitution and domain-aware quantifier rules
+  before adding instantiation or quantifier elimination.
