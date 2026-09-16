@@ -1,0 +1,27 @@
+{
+  "$schema": "open-symbolic-rules/v0.1/inference-test",
+  "section": "1.1",
+  "title": "Binary Propositional Resolution Tests",
+  "tests": [
+    {
+      "id": 1,
+      "premises": [
+        ["Or", "p", "q"],
+        ["Or", ["Not", "p"], "r"]
+      ],
+      "expected_conclusion": ["Or", "q", "r"],
+      "num_steps": 1,
+      "grade": "A"
+    },
+    {
+      "id": 2,
+      "premises": [
+        ["Or", ["Not", "p"], "q"],
+        ["Or", "p", "r"]
+      ],
+      "expected_conclusion": ["Or", "q", "r"],
+      "num_steps": 1,
+      "grade": "A"
+    }
+  ]
+}

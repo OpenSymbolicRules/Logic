@@ -41,10 +41,19 @@
       ]
     }
   },
+  "inference_profiles": {
+    "resolution": {
+      "description": "Binary propositional resolution over clauses prepared by the to_cnf profile.",
+      "load_order": [
+        "inferences/1-resolution/1.1-binary-propositional-resolution.json"
+      ]
+    }
+  },
   "rule_count": 31,
   "test_count": 31,
   "feature_flags": {
     "boolean_simplification": true,
-    "normal_forms": true
+    "normal_forms": true,
+    "propositional_inference": true
   }
 }

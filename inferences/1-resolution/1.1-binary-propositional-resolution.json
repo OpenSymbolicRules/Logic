@@ -1,0 +1,32 @@
+{
+  "$schema": "open-symbolic-rules/v0.1/inference",
+  "section": "1.1",
+  "title": "Binary Propositional Resolution",
+  "system": "propositional-resolution",
+  "semantics": {
+    "Or": "openmath:logic1#or",
+    "Not": "openmath:logic1#not"
+  },
+  "inferences": [
+    {
+      "id": 1,
+      "premises": [
+        ["Or", "p_", "q_"],
+        ["Or", ["Not", "p_"], "r_"]
+      ],
+      "constraints": [],
+      "conclusion": ["Or", "q_", "r_"],
+      "description": "Resolve a positive pivot in the first clause with its negative complement in the second clause."
+    },
+    {
+      "id": 2,
+      "premises": [
+        ["Or", ["Not", "p_"], "q_"],
+        ["Or", "p_", "r_"]
+      ],
+      "constraints": [],
+      "conclusion": ["Or", "q_", "r_"],
+      "description": "Resolve a negative pivot in the first clause with its positive complement in the second clause."
+    }
+  ]
+}

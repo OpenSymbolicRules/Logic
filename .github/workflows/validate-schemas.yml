@@ -28,6 +28,10 @@ jobs:
         run: find rules -type f -name '*.json' ! -path 'rules/meta.json' -print0 | xargs -0 -r check-jsonschema --schemafile Specification/schemas/rule-file.schema.json --base-uri "file://${PWD}/Specification/schemas/"
       - name: Validate test files
         run: find tests -type f -name '*.json' -print0 | xargs -0 -r check-jsonschema --schemafile Specification/schemas/test-file.schema.json --base-uri "file://${PWD}/Specification/schemas/"
+      - name: Validate inference files
+        run: find inferences -type f -name '*.json' -print0 | xargs -0 -r check-jsonschema --schemafile Specification/schemas/inference-file.schema.json --base-uri "file://${PWD}/Specification/schemas/"
+      - name: Validate inference test files
+        run: find inference-tests -type f -name '*.json' -print0 | xargs -0 -r check-jsonschema --schemafile Specification/schemas/inference-test-file.schema.json --base-uri "file://${PWD}/Specification/schemas/"
       - name: Validate global rule identifiers
         run: |
           duplicate_ids="$(find rules -type f -name '*.json' ! -path 'rules/meta.json' -print0 | xargs -0 -r jq -r '.rules[].id' | sort -n | uniq -d)"

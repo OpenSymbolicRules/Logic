@@ -11,6 +11,7 @@ uses OSR expression syntax and declares its operator meaning with OpenMath.
 - Implication and equivalence expansion to core connectives.
 - NAND, NOR, XOR, and XNOR expansion to core connectives.
 - Explicit `to_cnf` and `to_dnf` profiles for distributive normalisation.
+- An explicit `resolution` inference profile for sound clause derivation.
 - Executable fixtures for every rule.
 
 The current rules are intentionally oriented towards smaller expressions. This
