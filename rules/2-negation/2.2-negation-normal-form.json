@@ -1,0 +1,42 @@
+{
+  "$schema": "open-symbolic-rules/v0.1",
+  "section": "2.2",
+  "title": "Negation Normal Form",
+  "semantics": {
+    "And": "openmath:logic1#and",
+    "Or": "openmath:logic1#or",
+    "Not": "openmath:logic1#not",
+    "True": "openmath:logic1#true",
+    "False": "openmath:logic1#false"
+  },
+  "rules": [
+    {
+      "id": 1,
+      "pattern": ["Not", ["And", "p_", "q_"]],
+      "constraints": [],
+      "result": ["Or", ["Not", "p_"], ["Not", "q_"]],
+      "description": "De Morgan's law for the negation of a conjunction."
+    },
+    {
+      "id": 2,
+      "pattern": ["Not", ["Or", "p_", "q_"]],
+      "constraints": [],
+      "result": ["And", ["Not", "p_"], ["Not", "q_"]],
+      "description": "De Morgan's law for the negation of a disjunction."
+    },
+    {
+      "id": 3,
+      "pattern": ["Not", "True"],
+      "constraints": [],
+      "result": "False",
+      "description": "The negation of true is false."
+    },
+    {
+      "id": 4,
+      "pattern": ["Not", "False"],
+      "constraints": [],
+      "result": "True",
+      "description": "The negation of false is true."
+    }
+  ]
+}

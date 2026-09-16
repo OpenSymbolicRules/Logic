@@ -1,0 +1,32 @@
+{
+  "$schema": "open-symbolic-rules/v0.1",
+  "section": "4.1",
+  "title": "Derived Boolean Connectives",
+  "semantics": {
+    "And": "openmath:logic1#and",
+    "Or": "openmath:logic1#or",
+    "Not": "openmath:logic1#not",
+    "Implies": "openmath:logic1#implies",
+    "Equivalent": "openmath:logic1#equivalent"
+  },
+  "rules": [
+    {
+      "id": 1,
+      "pattern": ["Implies", "p_", "q_"],
+      "constraints": [],
+      "result": ["Or", ["Not", "p_"], "q_"],
+      "description": "An implication is a disjunction with a negated antecedent."
+    },
+    {
+      "id": 2,
+      "pattern": ["Equivalent", "p_", "q_"],
+      "constraints": [],
+      "result": [
+        "And",
+        ["Or", ["Not", "p_"], "q_"],
+        ["Or", ["Not", "q_"], "p_"]
+      ],
+      "description": "Logical equivalence is the conjunction of its two implication-free directions."
+    }
+  ]
+}

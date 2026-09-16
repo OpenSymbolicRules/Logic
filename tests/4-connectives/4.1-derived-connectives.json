@@ -1,0 +1,27 @@
+{
+  "$schema": "open-symbolic-rules/v0.1",
+  "section": "4.1",
+  "title": "Derived Boolean Connective Tests",
+  "tests": [
+    {
+      "id": 1,
+      "expression": ["Implies", "p", "q"],
+      "variable": "p",
+      "expected_result": ["Or", ["Not", "p"], "q"],
+      "num_steps": 1,
+      "grade": "A"
+    },
+    {
+      "id": 2,
+      "expression": ["Equivalent", "p", "q"],
+      "variable": "p",
+      "expected_result": [
+        "And",
+        ["Or", ["Not", "p"], "q"],
+        ["Or", ["Not", "q"], "p"]
+      ],
+      "num_steps": 1,
+      "grade": "A"
+    }
+  ]
+}

@@ -1,0 +1,39 @@
+{
+  "$schema": "open-symbolic-rules/v0.1",
+  "section": "2.2",
+  "title": "Negation Normal Form Tests",
+  "tests": [
+    {
+      "id": 1,
+      "expression": ["Not", ["And", "p", "q"]],
+      "variable": "p",
+      "expected_result": ["Or", ["Not", "p"], ["Not", "q"]],
+      "num_steps": 1,
+      "grade": "A"
+    },
+    {
+      "id": 2,
+      "expression": ["Not", ["Or", "p", "q"]],
+      "variable": "p",
+      "expected_result": ["And", ["Not", "p"], ["Not", "q"]],
+      "num_steps": 1,
+      "grade": "A"
+    },
+    {
+      "id": 3,
+      "expression": ["Not", "True"],
+      "variable": "p",
+      "expected_result": "False",
+      "num_steps": 1,
+      "grade": "A"
+    },
+    {
+      "id": 4,
+      "expression": ["Not", "False"],
+      "variable": "p",
+      "expected_result": "True",
+      "num_steps": 1,
+      "grade": "A"
+    }
+  ]
+}

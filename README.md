@@ -7,7 +7,8 @@ uses OSR expression syntax and declares its operator meaning with OpenMath.
 ## Contents
 
 - Boolean identity and idempotence rules.
-- Negation and complement rules.
+- Negation normal form and complement rules.
+- Implication and equivalence expansion to core connectives.
 - Executable fixtures for every rule.
 
 The current rules are intentionally oriented towards smaller expressions. This

@@ -9,10 +9,17 @@ and safe to apply repeatedly:
 - complements: `p ∨ ¬p` becomes `true` and `p ∧ ¬p` becomes `false`;
 - double negation: `¬¬p` becomes `p`.
 - absorption: `p ∨ (p ∧ q)` and `p ∧ (p ∨ q)` become `p`.
+- negation normal form: De Morgan's laws push `Not` through `And` and `Or`.
+- derived connectives: implication and equivalence reduce to `And`, `Or`, and
+  `Not`.
 
 For binary `And` and `Or` trees, rules whose result depends on an operand
 position are included in both operand orders. A consumer therefore does not
 need to canonicalize commutative expressions before applying this rule set.
+
+The negation-normal-form rules may increase expression size, but strictly move
+negation toward atomic propositions. They are therefore a normalizing pass,
+not a general-purpose size-reducing simplification.
 
 Rules are deliberately directed from a larger expression to a smaller one.
 For example, the inverse of double negation is not included: adding it would
