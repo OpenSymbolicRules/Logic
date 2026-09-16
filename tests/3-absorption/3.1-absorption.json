@@ -1,0 +1,39 @@
+{
+  "$schema": "open-symbolic-rules/v0.1",
+  "section": "3.1",
+  "title": "Boolean Absorption Tests",
+  "tests": [
+    {
+      "id": 1,
+      "expression": ["Or", "p", ["And", "p", "q"]],
+      "variable": "p",
+      "expected_result": "p",
+      "num_steps": 1,
+      "grade": "A"
+    },
+    {
+      "id": 2,
+      "expression": ["Or", ["And", "p", "q"], "p"],
+      "variable": "p",
+      "expected_result": "p",
+      "num_steps": 1,
+      "grade": "A"
+    },
+    {
+      "id": 3,
+      "expression": ["And", "p", ["Or", "p", "q"]],
+      "variable": "p",
+      "expected_result": "p",
+      "num_steps": 1,
+      "grade": "A"
+    },
+    {
+      "id": 4,
+      "expression": ["And", ["Or", "p", "q"], "p"],
+      "variable": "p",
+      "expected_result": "p",
+      "num_steps": 1,
+      "grade": "A"
+    }
+  ]
+}

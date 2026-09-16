@@ -1,0 +1,39 @@
+{
+  "$schema": "open-symbolic-rules/v0.1",
+  "section": "3.1",
+  "title": "Boolean Absorption",
+  "semantics": {
+    "And": "openmath:logic1#and",
+    "Or": "openmath:logic1#or"
+  },
+  "rules": [
+    {
+      "id": 1,
+      "pattern": ["Or", "p_", ["And", "p_", "q_"]],
+      "constraints": [],
+      "result": "p_",
+      "description": "A proposition absorbs its conjunction with another proposition."
+    },
+    {
+      "id": 2,
+      "pattern": ["Or", ["And", "p_", "q_"], "p_"],
+      "constraints": [],
+      "result": "p_",
+      "description": "A proposition absorbs its conjunction with another proposition."
+    },
+    {
+      "id": 3,
+      "pattern": ["And", "p_", ["Or", "p_", "q_"]],
+      "constraints": [],
+      "result": "p_",
+      "description": "A proposition absorbs its disjunction with another proposition."
+    },
+    {
+      "id": 4,
+      "pattern": ["And", ["Or", "p_", "q_"], "p_"],
+      "constraints": [],
+      "result": "p_",
+      "description": "A proposition absorbs its disjunction with another proposition."
+    }
+  ]
+}

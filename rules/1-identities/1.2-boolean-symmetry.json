@@ -1,0 +1,48 @@
+{
+  "$schema": "open-symbolic-rules/v0.1",
+  "section": "1.2",
+  "title": "Symmetric Boolean Identities",
+  "semantics": {
+    "And": "openmath:logic1#and",
+    "Or": "openmath:logic1#or",
+    "True": "openmath:logic1#true",
+    "False": "openmath:logic1#false"
+  },
+  "rules": [
+    {
+      "id": 1,
+      "pattern": ["Or", "False", "p_"],
+      "constraints": [],
+      "result": "p_",
+      "description": "Disjunction with false is the original proposition."
+    },
+    {
+      "id": 2,
+      "pattern": ["And", "True", "p_"],
+      "constraints": [],
+      "result": "p_",
+      "description": "Conjunction with true is the original proposition."
+    },
+    {
+      "id": 3,
+      "pattern": ["Or", "p_", "True"],
+      "constraints": [],
+      "result": "True",
+      "description": "Disjunction with true is true."
+    },
+    {
+      "id": 4,
+      "pattern": ["Or", "True", "p_"],
+      "constraints": [],
+      "result": "True",
+      "description": "Disjunction with true is true."
+    },
+    {
+      "id": 5,
+      "pattern": ["And", "False", "p_"],
+      "constraints": [],
+      "result": "False",
+      "description": "Conjunction with false is false."
+    }
+  ]
+}

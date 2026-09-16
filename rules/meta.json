@@ -6,10 +6,12 @@
   "description": "Boolean simplification and propositional logic rules.",
   "load_order": [
     "1-identities/1.1-boolean-identities.json",
-    "2-negation/2.1-complements.json"
+    "1-identities/1.2-boolean-symmetry.json",
+    "2-negation/2.1-complements.json",
+    "3-absorption/3.1-absorption.json"
   ],
-  "rule_count": 8,
-  "test_count": 8,
+  "rule_count": 17,
+  "test_count": 17,
   "feature_flags": {
     "boolean_simplification": true
   }
