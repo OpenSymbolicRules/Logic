@@ -1,0 +1,12 @@
+{
+  "$schema": "open-symbolic-rules/v0.1",
+  "section": "1.1",
+  "title": "Boolean Identity Tests",
+  "tests": [
+    {"id": 1, "expression": ["Or", "p", "False"], "variable": "p", "expected_result": "p", "num_steps": 1, "grade": "A"},
+    {"id": 2, "expression": ["And", "p", "True"], "variable": "p", "expected_result": "p", "num_steps": 1, "grade": "A"},
+    {"id": 3, "expression": ["And", "p", "False"], "variable": "p", "expected_result": "False", "num_steps": 1, "grade": "A"},
+    {"id": 4, "expression": ["Or", "p", "p"], "variable": "p", "expected_result": "p", "num_steps": 1, "grade": "A"},
+    {"id": 5, "expression": ["And", "p", "p"], "variable": "p", "expected_result": "p", "num_steps": 1, "grade": "A"}
+  ]
+}

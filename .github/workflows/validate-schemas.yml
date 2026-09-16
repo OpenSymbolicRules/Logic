@@ -1,0 +1,30 @@
+name: Validate JSON schemas
+
+on:
+  push:
+  pull_request:
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+jobs:
+  validate:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          submodules: recursive
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+      - name: Install validator
+        run: python -m pip install check-jsonschema==0.38.0
+      - name: Validate JSON Schema meta-schemas
+        run: check-jsonschema --check-metaschema Specification/schemas/*.schema.json
+      - name: Validate repository metadata
+        run: check-jsonschema --schemafile Specification/schemas/meta.schema.json rules/meta.json
+      - name: Validate rule files
+        run: find rules -type f -name '*.json' ! -path 'rules/meta.json' -print0 | xargs -0 -r check-jsonschema --schemafile Specification/schemas/rule-file.schema.json
+      - name: Validate test files
+        run: find tests -type f -name '*.json' -print0 | xargs -0 -r check-jsonschema --schemafile Specification/schemas/test-file.schema.json

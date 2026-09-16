@@ -1,0 +1,10 @@
+{
+  "$schema": "open-symbolic-rules/v0.1",
+  "section": "2.1",
+  "title": "Boolean Complement Tests",
+  "tests": [
+    {"id": 1, "expression": ["Not", ["Not", "p"]], "variable": "p", "expected_result": "p", "num_steps": 1, "grade": "A"},
+    {"id": 2, "expression": ["Or", "p", ["Not", "p"]], "variable": "p", "expected_result": "True", "num_steps": 1, "grade": "A"},
+    {"id": 3, "expression": ["And", "p", ["Not", "p"]], "variable": "p", "expected_result": "False", "num_steps": 1, "grade": "A"}
+  ]
+}

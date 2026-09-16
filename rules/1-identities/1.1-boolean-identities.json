@@ -1,0 +1,43 @@
+{
+  "$schema": "open-symbolic-rules/v0.1",
+  "section": "1.1",
+  "title": "Boolean Identities",
+  "semantics": {
+    "And": "openmath:logic1#and",
+    "Or": "openmath:logic1#or",
+    "True": "openmath:logic1#true",
+    "False": "openmath:logic1#false"
+  },
+  "rules": [
+    {
+      "id": "logic-or-false",
+      "lhs": ["Or", "p_", "False"],
+      "rhs": "p_",
+      "description": "Disjunction with false is the original proposition."
+    },
+    {
+      "id": "logic-and-true",
+      "lhs": ["And", "p_", "True"],
+      "rhs": "p_",
+      "description": "Conjunction with true is the original proposition."
+    },
+    {
+      "id": "logic-and-false",
+      "lhs": ["And", "p_", "False"],
+      "rhs": "False",
+      "description": "Conjunction with false is false."
+    },
+    {
+      "id": "logic-or-idempotent",
+      "lhs": ["Or", "p_", "p_"],
+      "rhs": "p_",
+      "description": "Repeated disjunction operands collapse to one proposition."
+    },
+    {
+      "id": "logic-and-idempotent",
+      "lhs": ["And", "p_", "p_"],
+      "rhs": "p_",
+      "description": "Repeated conjunction operands collapse to one proposition."
+    }
+  ]
+}

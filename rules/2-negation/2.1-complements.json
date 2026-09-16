@@ -1,0 +1,32 @@
+{
+  "$schema": "open-symbolic-rules/v0.1",
+  "section": "2.1",
+  "title": "Boolean Complements",
+  "semantics": {
+    "And": "openmath:logic1#and",
+    "Or": "openmath:logic1#or",
+    "Not": "openmath:logic1#not",
+    "True": "openmath:logic1#true",
+    "False": "openmath:logic1#false"
+  },
+  "rules": [
+    {
+      "id": "logic-double-negation",
+      "lhs": ["Not", ["Not", "p_"]],
+      "rhs": "p_",
+      "description": "Negating a proposition twice returns that proposition."
+    },
+    {
+      "id": "logic-or-complement",
+      "lhs": ["Or", "p_", ["Not", "p_"]],
+      "rhs": "True",
+      "description": "A proposition disjoined with its complement is true."
+    },
+    {
+      "id": "logic-and-complement",
+      "lhs": ["And", "p_", ["Not", "p_"]],
+      "rhs": "False",
+      "description": "A proposition conjoined with its complement is false."
+    }
+  ]
+}

@@ -1,0 +1,3 @@
+[submodule "Specification"]
+	path = Specification
+	url = https://github.com/OpenSymbolicRules/Specification.git
