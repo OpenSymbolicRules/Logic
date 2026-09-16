@@ -11,21 +11,24 @@
   },
   "rules": [
     {
-      "id": "logic-double-negation",
-      "lhs": ["Not", ["Not", "p_"]],
-      "rhs": "p_",
+      "id": 1,
+      "pattern": ["Not", ["Not", "p_"]],
+      "constraints": [],
+      "result": "p_",
       "description": "Negating a proposition twice returns that proposition."
     },
     {
-      "id": "logic-or-complement",
-      "lhs": ["Or", "p_", ["Not", "p_"]],
-      "rhs": "True",
+      "id": 2,
+      "pattern": ["Or", "p_", ["Not", "p_"]],
+      "constraints": [],
+      "result": "True",
       "description": "A proposition disjoined with its complement is true."
     },
     {
-      "id": "logic-and-complement",
-      "lhs": ["And", "p_", ["Not", "p_"]],
-      "rhs": "False",
+      "id": 3,
+      "pattern": ["And", "p_", ["Not", "p_"]],
+      "constraints": [],
+      "result": "False",
       "description": "A proposition conjoined with its complement is false."
     }
   ]

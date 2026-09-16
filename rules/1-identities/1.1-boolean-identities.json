@@ -10,33 +10,38 @@
   },
   "rules": [
     {
-      "id": "logic-or-false",
-      "lhs": ["Or", "p_", "False"],
-      "rhs": "p_",
+      "id": 1,
+      "pattern": ["Or", "p_", "False"],
+      "constraints": [],
+      "result": "p_",
       "description": "Disjunction with false is the original proposition."
     },
     {
-      "id": "logic-and-true",
-      "lhs": ["And", "p_", "True"],
-      "rhs": "p_",
+      "id": 2,
+      "pattern": ["And", "p_", "True"],
+      "constraints": [],
+      "result": "p_",
       "description": "Conjunction with true is the original proposition."
     },
     {
-      "id": "logic-and-false",
-      "lhs": ["And", "p_", "False"],
-      "rhs": "False",
+      "id": 3,
+      "pattern": ["And", "p_", "False"],
+      "constraints": [],
+      "result": "False",
       "description": "Conjunction with false is false."
     },
     {
-      "id": "logic-or-idempotent",
-      "lhs": ["Or", "p_", "p_"],
-      "rhs": "p_",
+      "id": 4,
+      "pattern": ["Or", "p_", "p_"],
+      "constraints": [],
+      "result": "p_",
       "description": "Repeated disjunction operands collapse to one proposition."
     },
     {
-      "id": "logic-and-idempotent",
-      "lhs": ["And", "p_", "p_"],
-      "rhs": "p_",
+      "id": 5,
+      "pattern": ["And", "p_", "p_"],
+      "constraints": [],
+      "result": "p_",
       "description": "Repeated conjunction operands collapse to one proposition."
     }
   ]
