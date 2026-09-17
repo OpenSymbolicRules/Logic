@@ -13,7 +13,8 @@
     "3-absorption/3.1-absorption.json",
     "4-connectives/4.1-derived-connectives.json",
     "4-connectives/4.2-compound-connectives.json",
-    "6-quantifiers/6.1-negation.json"
+    "6-quantifiers/6.1-negation.json",
+    "6-quantifiers/6.2-scope.json"
   ],
   "profiles": {
     "to_cnf": {

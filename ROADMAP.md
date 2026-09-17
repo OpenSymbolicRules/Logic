@@ -23,8 +23,9 @@
 - [x] Specify capture-avoiding substitution and domain-aware quantifier rules
   before adding instantiation or quantifier elimination. See
   [docs/substitution.md](docs/substitution.md).
-- [ ] Add the quantifier scope rules the specification makes expressible:
-  distribution of `Forall` over `And` and of `Exists` over `Or`, and the
-  `FreeQ`-guarded extraction and vacuous-quantification rules.
+- [x] Add the distribution of `Forall` over `And` and of `Exists` over `Or`,
+  in their contracting direction.
+- [ ] Add the `FreeQ`-guarded extraction and vacuous-quantification rules. These
+  need `FreeQ` to accept a binder list rather than a single variable.
 - [ ] Add universal instantiation and existential generalisation as an inference
   profile, where the consumer performs the substitution.

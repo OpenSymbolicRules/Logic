@@ -19,6 +19,16 @@ The initial rules push negation through a quantifier:
 
 They retain the original bound-variable list exactly.
 
+Two further rules merge quantifiers of the same kind over the same variables:
+
+- `(∀x.P) ∧ (∀x.Q)` becomes `∀x.(P ∧ Q)`;
+- `(∃x.P) ∨ (∃x.Q)` becomes `∃x.(P ∨ Q)`.
+
+Both are equivalences and need no side condition. They are oriented towards
+fewer binders, which is the contracting direction the default profile keeps
+throughout, and they require the two variable lists to be written identically;
+a consumer that compares binders up to alpha-equivalence may merge more.
+
 [Capture-avoiding substitution](substitution.md) specifies scope,
 alpha-equivalence, and substitution for these binders, and states which further
 quantifier rules those definitions make expressible. Instantiation and

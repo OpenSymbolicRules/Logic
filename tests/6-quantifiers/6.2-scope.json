@@ -1,0 +1,23 @@
+{
+  "$schema": "open-symbolic-rules/v0.1",
+  "section": "6.2",
+  "title": "Quantifier Scope Tests",
+  "tests": [
+    {
+      "id": 1,
+      "expression": ["And", ["Forall", ["x"], ["Or", "x", "p"]], ["Forall", ["x"], ["Or", "x", "q"]]],
+      "variable": "x",
+      "expected_result": ["Forall", ["x"], ["And", ["Or", "x", "p"], ["Or", "x", "q"]]],
+      "num_steps": 1,
+      "grade": "A"
+    },
+    {
+      "id": 2,
+      "expression": ["Or", ["Exists", ["x"], ["And", "x", "p"]], ["Exists", ["x"], ["And", "x", "q"]]],
+      "variable": "x",
+      "expected_result": ["Exists", ["x"], ["Or", ["And", "x", "p"], ["And", "x", "q"]]],
+      "num_steps": 1,
+      "grade": "A"
+    }
+  ]
+}

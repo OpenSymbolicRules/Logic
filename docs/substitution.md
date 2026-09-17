@@ -117,7 +117,8 @@ computation on it:
 - `∀x.P ≡ P` and `∃x.P ≡ P`, when `x` is not free in `P`.
 
 Rules that distribute a quantifier over a matching connective need no side
-condition at all:
+condition at all, and section 6.2 of the rule set publishes both in their
+contracting direction:
 
 - `∀x.(P ∧ Q) ≡ (∀x.P) ∧ (∀x.Q)`;
 - `∃x.(P ∨ Q) ≡ (∃x.P) ∨ (∃x.Q)`.
