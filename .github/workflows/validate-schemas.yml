@@ -26,6 +26,8 @@ jobs:
         run: check-jsonschema --schemafile Specification/schemas/meta.schema.json rules/meta.json
       - name: Validate rule files
         run: find rules -type f -name '*.json' ! -path 'rules/meta.json' -print0 | xargs -0 -r check-jsonschema --schemafile Specification/schemas/rule-file.schema.json --base-uri "file://${PWD}/Specification/schemas/"
+      - name: Validate OpenMath semantic closure
+        run: python3 Specification/scripts/validate_semantic_closure.py rules
       - name: Validate test files
         run: find tests -type f -name '*.json' -print0 | xargs -0 -r check-jsonschema --schemafile Specification/schemas/test-file.schema.json --base-uri "file://${PWD}/Specification/schemas/"
       - name: Validate inference files

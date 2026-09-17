@@ -9,6 +9,9 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ### Added
 
+- CI validation that every operator used by a rule has a declared OpenMath
+  semantic mapping.
+
 - Domain-safe quantifier scope rules for existential conjunction and universal
   disjunction.
 
