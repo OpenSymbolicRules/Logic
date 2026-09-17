@@ -17,7 +17,11 @@ The initial rules push negation through a quantifier:
 - `¬∀x.P` becomes `∃x.¬P`;
 - `¬∃x.P` becomes `∀x.¬P`.
 
-They retain the original bound-variable list exactly. Instantiation,
-quantifier elimination, and domain-specific quantifier rules are intentionally
-out of scope until their side conditions and capture-avoiding substitution are
-specified.
+They retain the original bound-variable list exactly.
+
+[Capture-avoiding substitution](substitution.md) specifies scope,
+alpha-equivalence, and substitution for these binders, and states which further
+quantifier rules those definitions make expressible. Instantiation and
+quantifier elimination compute their conclusion from the premise rather than
+selecting a fragment of it, so they belong in an inference profile alongside
+resolution rather than among the rewrites.

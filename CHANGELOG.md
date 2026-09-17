@@ -23,3 +23,6 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 - Exhaustive propositional semantic verification of rules, fixtures, and
   resolution inferences in CI.
 - JSON Schema validation, executable fixtures, and Boolean-rule documentation.
+- A specification of scope, alpha-equivalence, and capture-avoiding substitution
+  for the quantifier binders, including which further quantifier rules it makes
+  expressible as rewrites and why instantiation belongs in an inference profile.
