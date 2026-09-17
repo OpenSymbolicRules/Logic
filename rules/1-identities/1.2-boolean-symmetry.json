@@ -11,38 +11,59 @@
   "rules": [
     {
       "id": 6,
-      "pattern": ["Or", "False", "p_"],
+      "pattern": [
+        "Or",
+        "False",
+        "p_"
+      ],
       "constraints": [],
       "result": "p_",
       "description": "Disjunction with false is the original proposition."
     },
     {
       "id": 7,
-      "pattern": ["And", "True", "p_"],
+      "pattern": [
+        "And",
+        "True",
+        "p_"
+      ],
       "constraints": [],
       "result": "p_",
       "description": "Conjunction with true is the original proposition."
     },
     {
       "id": 8,
-      "pattern": ["Or", "p_", "True"],
+      "pattern": [
+        "Or",
+        "p_",
+        "True"
+      ],
       "constraints": [],
       "result": "True",
       "description": "Disjunction with true is true."
     },
     {
       "id": 9,
-      "pattern": ["Or", "True", "p_"],
+      "pattern": [
+        "Or",
+        "True",
+        "p_"
+      ],
       "constraints": [],
       "result": "True",
       "description": "Disjunction with true is true."
     },
     {
       "id": 10,
-      "pattern": ["And", "False", "p_"],
+      "pattern": [
+        "And",
+        "False",
+        "p_"
+      ],
       "constraints": [],
       "result": "False",
       "description": "Conjunction with false is false."
     }
-  ]
+  ],
+  "identity": "logic:1-identities/1.2-boolean-symmetry"
 }

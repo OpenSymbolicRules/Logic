@@ -10,17 +10,54 @@
   "rules": [
     {
       "id": 32,
-      "pattern": ["Not", ["Forall", ["xs__"], "p_"]],
+      "pattern": [
+        "Not",
+        [
+          "Forall",
+          [
+            "xs__"
+          ],
+          "p_"
+        ]
+      ],
       "constraints": [],
-      "result": ["Exists", ["xs__"], ["Not", "p_"]],
+      "result": [
+        "Exists",
+        [
+          "xs__"
+        ],
+        [
+          "Not",
+          "p_"
+        ]
+      ],
       "description": "The negation of a universal quantifier is an existential quantifier of the negated body."
     },
     {
       "id": 33,
-      "pattern": ["Not", ["Exists", ["xs__"], "p_"]],
+      "pattern": [
+        "Not",
+        [
+          "Exists",
+          [
+            "xs__"
+          ],
+          "p_"
+        ]
+      ],
       "constraints": [],
-      "result": ["Forall", ["xs__"], ["Not", "p_"]],
+      "result": [
+        "Forall",
+        [
+          "xs__"
+        ],
+        [
+          "Not",
+          "p_"
+        ]
+      ],
       "description": "The negation of an existential quantifier is a universal quantifier of the negated body."
     }
-  ]
+  ],
+  "identity": "logic:6-quantifiers/6.1-negation"
 }

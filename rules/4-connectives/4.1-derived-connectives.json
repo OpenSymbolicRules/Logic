@@ -12,21 +12,51 @@
   "rules": [
     {
       "id": 22,
-      "pattern": ["Implies", "p_", "q_"],
+      "pattern": [
+        "Implies",
+        "p_",
+        "q_"
+      ],
       "constraints": [],
-      "result": ["Or", ["Not", "p_"], "q_"],
+      "result": [
+        "Or",
+        [
+          "Not",
+          "p_"
+        ],
+        "q_"
+      ],
       "description": "An implication is a disjunction with a negated antecedent."
     },
     {
       "id": 23,
-      "pattern": ["Equivalent", "p_", "q_"],
+      "pattern": [
+        "Equivalent",
+        "p_",
+        "q_"
+      ],
       "constraints": [],
       "result": [
         "And",
-        ["Or", ["Not", "p_"], "q_"],
-        ["Or", ["Not", "q_"], "p_"]
+        [
+          "Or",
+          [
+            "Not",
+            "p_"
+          ],
+          "q_"
+        ],
+        [
+          "Or",
+          [
+            "Not",
+            "q_"
+          ],
+          "p_"
+        ]
       ],
       "description": "Logical equivalence is the conjunction of its two implication-free directions."
     }
-  ]
+  ],
+  "identity": "logic:4-connectives/4.1-derived-connectives"
 }

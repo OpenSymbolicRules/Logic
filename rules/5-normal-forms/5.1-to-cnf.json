@@ -9,17 +9,58 @@
   "rules": [
     {
       "id": 24,
-      "pattern": ["Or", "p_", ["And", "q_", "r_"]],
+      "pattern": [
+        "Or",
+        "p_",
+        [
+          "And",
+          "q_",
+          "r_"
+        ]
+      ],
       "constraints": [],
-      "result": ["And", ["Or", "p_", "q_"], ["Or", "p_", "r_"]],
+      "result": [
+        "And",
+        [
+          "Or",
+          "p_",
+          "q_"
+        ],
+        [
+          "Or",
+          "p_",
+          "r_"
+        ]
+      ],
       "description": "Distribute disjunction over conjunction to construct CNF."
     },
     {
       "id": 25,
-      "pattern": ["Or", ["And", "q_", "r_"], "p_"],
+      "pattern": [
+        "Or",
+        [
+          "And",
+          "q_",
+          "r_"
+        ],
+        "p_"
+      ],
       "constraints": [],
-      "result": ["And", ["Or", "q_", "p_"], ["Or", "r_", "p_"]],
+      "result": [
+        "And",
+        [
+          "Or",
+          "q_",
+          "p_"
+        ],
+        [
+          "Or",
+          "r_",
+          "p_"
+        ]
+      ],
       "description": "Distribute disjunction over conjunction to construct CNF."
     }
-  ]
+  ],
+  "identity": "logic:5-normal-forms/5.1-to-cnf"
 }

@@ -9,31 +9,64 @@
   "rules": [
     {
       "id": 18,
-      "pattern": ["Or", "p_", ["And", "p_", "q_"]],
+      "pattern": [
+        "Or",
+        "p_",
+        [
+          "And",
+          "p_",
+          "q_"
+        ]
+      ],
       "constraints": [],
       "result": "p_",
       "description": "A proposition absorbs its conjunction with another proposition."
     },
     {
       "id": 19,
-      "pattern": ["Or", ["And", "p_", "q_"], "p_"],
+      "pattern": [
+        "Or",
+        [
+          "And",
+          "p_",
+          "q_"
+        ],
+        "p_"
+      ],
       "constraints": [],
       "result": "p_",
       "description": "A proposition absorbs its conjunction with another proposition."
     },
     {
       "id": 20,
-      "pattern": ["And", "p_", ["Or", "p_", "q_"]],
+      "pattern": [
+        "And",
+        "p_",
+        [
+          "Or",
+          "p_",
+          "q_"
+        ]
+      ],
       "constraints": [],
       "result": "p_",
       "description": "A proposition absorbs its disjunction with another proposition."
     },
     {
       "id": 21,
-      "pattern": ["And", ["Or", "p_", "q_"], "p_"],
+      "pattern": [
+        "And",
+        [
+          "Or",
+          "p_",
+          "q_"
+        ],
+        "p_"
+      ],
       "constraints": [],
       "result": "p_",
       "description": "A proposition absorbs its disjunction with another proposition."
     }
-  ]
+  ],
+  "identity": "logic:3-absorption/3.1-absorption"
 }

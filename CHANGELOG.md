@@ -9,6 +9,9 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ### Added
 
+- Stable `identity` values for rule files, completing canonical `identity:id`
+  rule identifiers.
+
 - Boolean identity, idempotence, double-negation, and complement rules with
   OpenMath `logic1` semantics.
 - Symmetric identity and annihilation rules, plus Boolean absorption rules.

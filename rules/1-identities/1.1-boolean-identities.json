@@ -11,38 +11,59 @@
   "rules": [
     {
       "id": 1,
-      "pattern": ["Or", "p_", "False"],
+      "pattern": [
+        "Or",
+        "p_",
+        "False"
+      ],
       "constraints": [],
       "result": "p_",
       "description": "Disjunction with false is the original proposition."
     },
     {
       "id": 2,
-      "pattern": ["And", "p_", "True"],
+      "pattern": [
+        "And",
+        "p_",
+        "True"
+      ],
       "constraints": [],
       "result": "p_",
       "description": "Conjunction with true is the original proposition."
     },
     {
       "id": 3,
-      "pattern": ["And", "p_", "False"],
+      "pattern": [
+        "And",
+        "p_",
+        "False"
+      ],
       "constraints": [],
       "result": "False",
       "description": "Conjunction with false is false."
     },
     {
       "id": 4,
-      "pattern": ["Or", "p_", "p_"],
+      "pattern": [
+        "Or",
+        "p_",
+        "p_"
+      ],
       "constraints": [],
       "result": "p_",
       "description": "Repeated disjunction operands collapse to one proposition."
     },
     {
       "id": 5,
-      "pattern": ["And", "p_", "p_"],
+      "pattern": [
+        "And",
+        "p_",
+        "p_"
+      ],
       "constraints": [],
       "result": "p_",
       "description": "Repeated conjunction operands collapse to one proposition."
     }
-  ]
+  ],
+  "identity": "logic:1-identities/1.1-boolean-identities"
 }

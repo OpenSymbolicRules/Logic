@@ -14,39 +14,98 @@
   "rules": [
     {
       "id": 28,
-      "pattern": ["Nand", "p_", "q_"],
+      "pattern": [
+        "Nand",
+        "p_",
+        "q_"
+      ],
       "constraints": [],
-      "result": ["Not", ["And", "p_", "q_"]],
+      "result": [
+        "Not",
+        [
+          "And",
+          "p_",
+          "q_"
+        ]
+      ],
       "description": "NAND is the negation of conjunction."
     },
     {
       "id": 29,
-      "pattern": ["Nor", "p_", "q_"],
+      "pattern": [
+        "Nor",
+        "p_",
+        "q_"
+      ],
       "constraints": [],
-      "result": ["Not", ["Or", "p_", "q_"]],
+      "result": [
+        "Not",
+        [
+          "Or",
+          "p_",
+          "q_"
+        ]
+      ],
       "description": "NOR is the negation of disjunction."
     },
     {
       "id": 30,
-      "pattern": ["Xor", "p_", "q_"],
+      "pattern": [
+        "Xor",
+        "p_",
+        "q_"
+      ],
       "constraints": [],
       "result": [
         "Or",
-        ["And", "p_", ["Not", "q_"]],
-        ["And", ["Not", "p_"], "q_"]
+        [
+          "And",
+          "p_",
+          [
+            "Not",
+            "q_"
+          ]
+        ],
+        [
+          "And",
+          [
+            "Not",
+            "p_"
+          ],
+          "q_"
+        ]
       ],
       "description": "Exclusive disjunction holds when exactly one operand is true."
     },
     {
       "id": 31,
-      "pattern": ["Xnor", "p_", "q_"],
+      "pattern": [
+        "Xnor",
+        "p_",
+        "q_"
+      ],
       "constraints": [],
       "result": [
         "And",
-        ["Or", ["Not", "p_"], "q_"],
-        ["Or", ["Not", "q_"], "p_"]
+        [
+          "Or",
+          [
+            "Not",
+            "p_"
+          ],
+          "q_"
+        ],
+        [
+          "Or",
+          [
+            "Not",
+            "q_"
+          ],
+          "p_"
+        ]
       ],
       "description": "Exclusive NOR holds when both operands have the same truth value."
     }
-  ]
+  ],
+  "identity": "logic:4-connectives/4.2-compound-connectives"
 }

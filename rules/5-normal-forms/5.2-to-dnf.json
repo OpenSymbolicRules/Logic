@@ -9,17 +9,58 @@
   "rules": [
     {
       "id": 26,
-      "pattern": ["And", "p_", ["Or", "q_", "r_"]],
+      "pattern": [
+        "And",
+        "p_",
+        [
+          "Or",
+          "q_",
+          "r_"
+        ]
+      ],
       "constraints": [],
-      "result": ["Or", ["And", "p_", "q_"], ["And", "p_", "r_"]],
+      "result": [
+        "Or",
+        [
+          "And",
+          "p_",
+          "q_"
+        ],
+        [
+          "And",
+          "p_",
+          "r_"
+        ]
+      ],
       "description": "Distribute conjunction over disjunction to construct DNF."
     },
     {
       "id": 27,
-      "pattern": ["And", ["Or", "q_", "r_"], "p_"],
+      "pattern": [
+        "And",
+        [
+          "Or",
+          "q_",
+          "r_"
+        ],
+        "p_"
+      ],
       "constraints": [],
-      "result": ["Or", ["And", "q_", "p_"], ["And", "r_", "p_"]],
+      "result": [
+        "Or",
+        [
+          "And",
+          "q_",
+          "p_"
+        ],
+        [
+          "And",
+          "r_",
+          "p_"
+        ]
+      ],
       "description": "Distribute conjunction over disjunction to construct DNF."
     }
-  ]
+  ],
+  "identity": "logic:5-normal-forms/5.2-to-dnf"
 }
