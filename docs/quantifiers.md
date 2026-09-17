@@ -29,6 +29,13 @@ fewer binders, which is the contracting direction the default profile keeps
 throughout, and they require the two variable lists to be written identically;
 a consumer that compares binders up to alpha-equivalence may merge more.
 
+A quantifier whose body does not mention its variables is dropped:
+
+- `∀x.P` and `∃x.P` become `P` when `x` is not free in `P`.
+
+Both assume a non-empty domain of quantification, as classical first-order logic
+does. A rule set for a logic that admits the empty domain must drop them.
+
 [Capture-avoiding substitution](substitution.md) specifies scope,
 alpha-equivalence, and substitution for these binders, and states which further
 quantifier rules those definitions make expressible. Instantiation and

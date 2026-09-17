@@ -25,7 +25,9 @@
   [docs/substitution.md](docs/substitution.md).
 - [x] Add the distribution of `Forall` over `And` and of `Exists` over `Or`,
   in their contracting direction.
-- [ ] Add the `FreeQ`-guarded extraction and vacuous-quantification rules. These
-  need `FreeQ` to accept a binder list rather than a single variable.
+- [x] Add the `FreeQ`-guarded vacuous-quantification rules.
+- [ ] Add the `FreeQ`-guarded extraction rules, `∀x.(P ∧ Q) ≡ (∀x.P) ∧ Q` and
+  `∃x.(P ∨ Q) ≡ (∃x.P) ∨ Q`. Check first that they do not cycle against the
+  merging rules of section 6.2.
 - [ ] Add universal instantiation and existential generalisation as an inference
   profile, where the consumer performs the substitution.

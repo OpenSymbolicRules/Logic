@@ -22,6 +22,20 @@
       "constraints": [],
       "result": ["Exists", ["xs__"], ["Or", "p_", "q_"]],
       "description": "An existential quantifier distributes over disjunction, so two existentials over the same variables merge into one."
+    },
+    {
+      "id": 36,
+      "pattern": ["Forall", ["xs__"], "p_"],
+      "constraints": [["FreeQ", "p_", "xs_"]],
+      "result": "p_",
+      "description": "A universal quantifier whose body does not mention its variables is vacuous. This assumes a non-empty domain of quantification."
+    },
+    {
+      "id": 37,
+      "pattern": ["Exists", ["xs__"], "p_"],
+      "constraints": [["FreeQ", "p_", "xs_"]],
+      "result": "p_",
+      "description": "An existential quantifier whose body does not mention its variables is vacuous. This assumes a non-empty domain of quantification."
     }
   ]
 }

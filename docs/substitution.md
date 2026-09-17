@@ -112,9 +112,25 @@ Rules whose only side condition is `FreeQ` need nothing beyond the definitions
 above, because the side condition is a question about the premise rather than a
 computation on it:
 
+- `∀x.P ≡ P` and `∃x.P ≡ P`, when `x` is not free in `P`. Section 6.2 publishes
+  both.
 - `∀x.(P ∧ Q) ≡ (∀x.P) ∧ Q` and `∃x.(P ∨ Q) ≡ (∃x.P) ∨ Q`, when `x` is not free
-  in `Q`;
-- `∀x.P ≡ P` and `∃x.P ≡ P`, when `x` is not free in `P`.
+  in `Q`.
+
+A binder declared `xs__` is referred to as `xs_` in a side condition. The
+declaration captures a whole variable list, and the reference names that one
+captured value, so the vacuous-quantification rule reads:
+
+```json
+{
+  "pattern": ["Forall", ["xs__"], "p_"],
+  "constraints": [["FreeQ", "p_", "xs_"]],
+  "result": "p_"
+}
+```
+
+`FreeQ` accepts a list on either side: here it asks whether `p` is free of every
+variable the binder declares.
 
 Rules that distribute a quantifier over a matching connective need no side
 condition at all, and section 6.2 of the rule set publishes both in their

@@ -18,6 +18,22 @@
       "expected_result": ["Exists", ["x"], ["Or", ["And", "x", "p"], ["And", "x", "q"]]],
       "num_steps": 1,
       "grade": "A"
+    },
+    {
+      "id": 3,
+      "expression": ["Forall", ["x"], ["Or", "p", "q"]],
+      "variable": "x",
+      "expected_result": ["Or", "p", "q"],
+      "num_steps": 1,
+      "grade": "A"
+    },
+    {
+      "id": 4,
+      "expression": ["Exists", ["x"], ["And", "p", "q"]],
+      "variable": "x",
+      "expected_result": ["And", "p", "q"],
+      "num_steps": 1,
+      "grade": "A"
     }
   ]
 }

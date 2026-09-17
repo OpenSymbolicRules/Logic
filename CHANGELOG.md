@@ -35,6 +35,8 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
   the verifier cannot model.  `constraints` were read from the rule file and
   then ignored, so a rule valid only under a side condition was reported as
   verified unconditionally.
+- Vacuous-quantification rules dropping a `Forall` or an `Exists` whose body does
+  not mention its variables.
 - Quantifier scope rules merging two universals over a conjunction and two
   existentials over a disjunction when their variable lists agree.
 - A specification of scope, alpha-equivalence, and capture-avoiding substitution
