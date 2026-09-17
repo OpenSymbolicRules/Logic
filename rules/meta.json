@@ -54,8 +54,8 @@
       ]
     }
   },
-  "rule_count": 33,
-  "test_count": 33,
+  "rule_count": 35,
+  "test_count": 35,
   "feature_flags": {
     "boolean_simplification": true,
     "normal_forms": true,

@@ -9,6 +9,9 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ### Added
 
+- Domain-safe quantifier scope rules for existential conjunction and universal
+  disjunction.
+
 - Stable `identity` values for rule files, completing canonical `identity:id`
   rule identifiers.
 

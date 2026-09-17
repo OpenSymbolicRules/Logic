@@ -148,6 +148,38 @@
           }
         ]
       }
+    },
+    {
+      "id": 38,
+      "pattern": ["Exists", ["xs__"], ["And", "p_", "q_"]],
+      "constraints": [["FreeQ", "q_", "xs_"]],
+      "result": ["And", ["Exists", ["xs__"], "p_"], "q_"],
+      "description": "An existential quantifier moves through a conjunction when the other conjunct is independent of its bound variables.",
+      "provenance": {
+        "method": "authored",
+        "sources": [
+          {
+            "name": "OpenSymbolicRules Logic",
+            "locator": "logic:6-quantifiers/6.2-scope:38"
+          }
+        ]
+      }
+    },
+    {
+      "id": 39,
+      "pattern": ["Forall", ["xs__"], ["Or", "p_", "q_"]],
+      "constraints": [["FreeQ", "q_", "xs_"]],
+      "result": ["Or", ["Forall", ["xs__"], "p_"], "q_"],
+      "description": "A universal quantifier moves through a disjunction when the other disjunct is independent of its bound variables.",
+      "provenance": {
+        "method": "authored",
+        "sources": [
+          {
+            "name": "OpenSymbolicRules Logic",
+            "locator": "logic:6-quantifiers/6.2-scope:39"
+          }
+        ]
+      }
     }
   ],
   "identity": "logic:6-quantifiers/6.2-scope"

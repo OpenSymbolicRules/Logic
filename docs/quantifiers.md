@@ -36,6 +36,11 @@ A quantifier whose body does not mention its variables is dropped:
 Both assume a non-empty domain of quantification, as classical first-order logic
 does. A rule set for a logic that admits the empty domain must drop them.
 
+The scope profile also contains the empty-domain-safe directions
+`∃x.(P ∧ Q) → (∃x.P) ∧ Q` and `∀x.(P ∨ Q) → (∀x.P) ∨ Q` whenever `Q` is
+independent of `x`. The reverse directions would require a non-empty-domain
+assumption, so they are deliberately not provided as generic rewrites.
+
 [Capture-avoiding substitution](substitution.md) specifies scope,
 alpha-equivalence, and substitution for these binders, and states which further
 quantifier rules those definitions make expressible. Instantiation and
