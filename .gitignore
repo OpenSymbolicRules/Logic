@@ -1,0 +1,34 @@
+# --- Gitallow Pattern ---
+# 1. Ignore everything by default
+*
+
+# 2. Allow descending into directories
+!*/
+
+# 3. Allow specific file extensions and hidden files
+!.*
+!*.md
+!*.json
+!*.py
+!*.sh
+!*.yml
+!*.yaml
+
+# 4. Allow specific files without extension
+!LICENSE
+!justfile
+
+# 5. Re-ignore specific things we definitely don't want
+.git/
+.DS_Store
+.vscode/
+.idea/
+.claude/
+.specify/
+CLAUDE.md
+AGENTS.md
+spec.md
+specs/
+__pycache__/
+*.pyc
+*.swp
