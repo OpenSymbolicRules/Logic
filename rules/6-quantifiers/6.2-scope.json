@@ -40,7 +40,16 @@
           "q_"
         ]
       ],
-      "description": "A universal quantifier distributes over conjunction, so two universals over the same variables merge into one."
+      "description": "A universal quantifier distributes over conjunction, so two universals over the same variables merge into one.",
+      "provenance": {
+        "method": "authored",
+        "sources": [
+          {
+            "name": "OpenSymbolicRules Logic",
+            "locator": "logic:6-quantifiers/6.2-scope:34"
+          }
+        ]
+      }
     },
     {
       "id": 35,
@@ -73,7 +82,16 @@
           "q_"
         ]
       ],
-      "description": "An existential quantifier distributes over disjunction, so two existentials over the same variables merge into one."
+      "description": "An existential quantifier distributes over disjunction, so two existentials over the same variables merge into one.",
+      "provenance": {
+        "method": "authored",
+        "sources": [
+          {
+            "name": "OpenSymbolicRules Logic",
+            "locator": "logic:6-quantifiers/6.2-scope:35"
+          }
+        ]
+      }
     },
     {
       "id": 36,
@@ -92,7 +110,16 @@
         ]
       ],
       "result": "p_",
-      "description": "A universal quantifier whose body does not mention its variables is vacuous. This assumes a non-empty domain of quantification."
+      "description": "A universal quantifier whose body does not mention its variables is vacuous. This assumes a non-empty domain of quantification.",
+      "provenance": {
+        "method": "authored",
+        "sources": [
+          {
+            "name": "OpenSymbolicRules Logic",
+            "locator": "logic:6-quantifiers/6.2-scope:36"
+          }
+        ]
+      }
     },
     {
       "id": 37,
@@ -111,7 +138,16 @@
         ]
       ],
       "result": "p_",
-      "description": "An existential quantifier whose body does not mention its variables is vacuous. This assumes a non-empty domain of quantification."
+      "description": "An existential quantifier whose body does not mention its variables is vacuous. This assumes a non-empty domain of quantification.",
+      "provenance": {
+        "method": "authored",
+        "sources": [
+          {
+            "name": "OpenSymbolicRules Logic",
+            "locator": "logic:6-quantifiers/6.2-scope:37"
+          }
+        ]
+      }
     }
   ],
   "identity": "logic:6-quantifiers/6.2-scope"

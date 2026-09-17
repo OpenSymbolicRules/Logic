@@ -32,7 +32,16 @@
           "r_"
         ]
       ],
-      "description": "Distribute disjunction over conjunction to construct CNF."
+      "description": "Distribute disjunction over conjunction to construct CNF.",
+      "provenance": {
+        "method": "authored",
+        "sources": [
+          {
+            "name": "OpenSymbolicRules Logic",
+            "locator": "logic:5-normal-forms/5.1-to-cnf:24"
+          }
+        ]
+      }
     },
     {
       "id": 25,
@@ -59,7 +68,16 @@
           "p_"
         ]
       ],
-      "description": "Distribute disjunction over conjunction to construct CNF."
+      "description": "Distribute disjunction over conjunction to construct CNF.",
+      "provenance": {
+        "method": "authored",
+        "sources": [
+          {
+            "name": "OpenSymbolicRules Logic",
+            "locator": "logic:5-normal-forms/5.1-to-cnf:25"
+          }
+        ]
+      }
     }
   ],
   "identity": "logic:5-normal-forms/5.1-to-cnf"

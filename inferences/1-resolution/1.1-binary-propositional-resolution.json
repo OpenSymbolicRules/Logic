@@ -11,22 +11,70 @@
     {
       "id": 1,
       "premises": [
-        ["Or", "p_", "q_"],
-        ["Or", ["Not", "p_"], "r_"]
+        [
+          "Or",
+          "p_",
+          "q_"
+        ],
+        [
+          "Or",
+          [
+            "Not",
+            "p_"
+          ],
+          "r_"
+        ]
       ],
       "constraints": [],
-      "conclusion": ["Or", "q_", "r_"],
-      "description": "Resolve a positive pivot in the first clause with its negative complement in the second clause."
+      "conclusion": [
+        "Or",
+        "q_",
+        "r_"
+      ],
+      "description": "Resolve a positive pivot in the first clause with its negative complement in the second clause.",
+      "provenance": {
+        "method": "authored",
+        "sources": [
+          {
+            "name": "OpenSymbolicRules Logic",
+            "locator": "inferences/1-resolution/1.1-binary-propositional-resolution.json:1"
+          }
+        ]
+      }
     },
     {
       "id": 2,
       "premises": [
-        ["Or", ["Not", "p_"], "q_"],
-        ["Or", "p_", "r_"]
+        [
+          "Or",
+          [
+            "Not",
+            "p_"
+          ],
+          "q_"
+        ],
+        [
+          "Or",
+          "p_",
+          "r_"
+        ]
       ],
       "constraints": [],
-      "conclusion": ["Or", "q_", "r_"],
-      "description": "Resolve a negative pivot in the first clause with its positive complement in the second clause."
+      "conclusion": [
+        "Or",
+        "q_",
+        "r_"
+      ],
+      "description": "Resolve a negative pivot in the first clause with its positive complement in the second clause.",
+      "provenance": {
+        "method": "authored",
+        "sources": [
+          {
+            "name": "OpenSymbolicRules Logic",
+            "locator": "inferences/1-resolution/1.1-binary-propositional-resolution.json:2"
+          }
+        ]
+      }
     }
   ]
 }

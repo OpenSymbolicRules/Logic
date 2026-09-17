@@ -31,7 +31,16 @@
           "p_"
         ]
       ],
-      "description": "The negation of a universal quantifier is an existential quantifier of the negated body."
+      "description": "The negation of a universal quantifier is an existential quantifier of the negated body.",
+      "provenance": {
+        "method": "authored",
+        "sources": [
+          {
+            "name": "OpenSymbolicRules Logic",
+            "locator": "logic:6-quantifiers/6.1-negation:32"
+          }
+        ]
+      }
     },
     {
       "id": 33,
@@ -56,7 +65,16 @@
           "p_"
         ]
       ],
-      "description": "The negation of an existential quantifier is a universal quantifier of the negated body."
+      "description": "The negation of an existential quantifier is a universal quantifier of the negated body.",
+      "provenance": {
+        "method": "authored",
+        "sources": [
+          {
+            "name": "OpenSymbolicRules Logic",
+            "locator": "logic:6-quantifiers/6.1-negation:33"
+          }
+        ]
+      }
     }
   ],
   "identity": "logic:6-quantifiers/6.1-negation"

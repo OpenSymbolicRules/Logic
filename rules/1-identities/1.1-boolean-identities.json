@@ -18,7 +18,16 @@
       ],
       "constraints": [],
       "result": "p_",
-      "description": "Disjunction with false is the original proposition."
+      "description": "Disjunction with false is the original proposition.",
+      "provenance": {
+        "method": "authored",
+        "sources": [
+          {
+            "name": "OpenSymbolicRules Logic",
+            "locator": "logic:1-identities/1.1-boolean-identities:1"
+          }
+        ]
+      }
     },
     {
       "id": 2,
@@ -29,7 +38,16 @@
       ],
       "constraints": [],
       "result": "p_",
-      "description": "Conjunction with true is the original proposition."
+      "description": "Conjunction with true is the original proposition.",
+      "provenance": {
+        "method": "authored",
+        "sources": [
+          {
+            "name": "OpenSymbolicRules Logic",
+            "locator": "logic:1-identities/1.1-boolean-identities:2"
+          }
+        ]
+      }
     },
     {
       "id": 3,
@@ -40,7 +58,16 @@
       ],
       "constraints": [],
       "result": "False",
-      "description": "Conjunction with false is false."
+      "description": "Conjunction with false is false.",
+      "provenance": {
+        "method": "authored",
+        "sources": [
+          {
+            "name": "OpenSymbolicRules Logic",
+            "locator": "logic:1-identities/1.1-boolean-identities:3"
+          }
+        ]
+      }
     },
     {
       "id": 4,
@@ -51,7 +78,16 @@
       ],
       "constraints": [],
       "result": "p_",
-      "description": "Repeated disjunction operands collapse to one proposition."
+      "description": "Repeated disjunction operands collapse to one proposition.",
+      "provenance": {
+        "method": "authored",
+        "sources": [
+          {
+            "name": "OpenSymbolicRules Logic",
+            "locator": "logic:1-identities/1.1-boolean-identities:4"
+          }
+        ]
+      }
     },
     {
       "id": 5,
@@ -62,7 +98,16 @@
       ],
       "constraints": [],
       "result": "p_",
-      "description": "Repeated conjunction operands collapse to one proposition."
+      "description": "Repeated conjunction operands collapse to one proposition.",
+      "provenance": {
+        "method": "authored",
+        "sources": [
+          {
+            "name": "OpenSymbolicRules Logic",
+            "locator": "logic:1-identities/1.1-boolean-identities:5"
+          }
+        ]
+      }
     }
   ],
   "identity": "logic:1-identities/1.1-boolean-identities"

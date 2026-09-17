@@ -28,7 +28,16 @@
           "q_"
         ]
       ],
-      "description": "NAND is the negation of conjunction."
+      "description": "NAND is the negation of conjunction.",
+      "provenance": {
+        "method": "authored",
+        "sources": [
+          {
+            "name": "OpenSymbolicRules Logic",
+            "locator": "logic:4-connectives/4.2-compound-connectives:28"
+          }
+        ]
+      }
     },
     {
       "id": 29,
@@ -46,7 +55,16 @@
           "q_"
         ]
       ],
-      "description": "NOR is the negation of disjunction."
+      "description": "NOR is the negation of disjunction.",
+      "provenance": {
+        "method": "authored",
+        "sources": [
+          {
+            "name": "OpenSymbolicRules Logic",
+            "locator": "logic:4-connectives/4.2-compound-connectives:29"
+          }
+        ]
+      }
     },
     {
       "id": 30,
@@ -75,7 +93,16 @@
           "q_"
         ]
       ],
-      "description": "Exclusive disjunction holds when exactly one operand is true."
+      "description": "Exclusive disjunction holds when exactly one operand is true.",
+      "provenance": {
+        "method": "authored",
+        "sources": [
+          {
+            "name": "OpenSymbolicRules Logic",
+            "locator": "logic:4-connectives/4.2-compound-connectives:30"
+          }
+        ]
+      }
     },
     {
       "id": 31,
@@ -104,7 +131,16 @@
           "p_"
         ]
       ],
-      "description": "Exclusive NOR holds when both operands have the same truth value."
+      "description": "Exclusive NOR holds when both operands have the same truth value.",
+      "provenance": {
+        "method": "authored",
+        "sources": [
+          {
+            "name": "OpenSymbolicRules Logic",
+            "locator": "logic:4-connectives/4.2-compound-connectives:31"
+          }
+        ]
+      }
     }
   ],
   "identity": "logic:4-connectives/4.2-compound-connectives"

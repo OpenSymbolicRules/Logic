@@ -12,41 +12,105 @@
       "id": 3,
       "premises": [
         "p_",
-        ["Or", ["Not", "p_"], "q_"]
+        [
+          "Or",
+          [
+            "Not",
+            "p_"
+          ],
+          "q_"
+        ]
       ],
       "constraints": [],
       "conclusion": "q_",
-      "description": "Resolve a positive unit clause against a negative literal in a binary clause."
+      "description": "Resolve a positive unit clause against a negative literal in a binary clause.",
+      "provenance": {
+        "method": "authored",
+        "sources": [
+          {
+            "name": "OpenSymbolicRules Logic",
+            "locator": "inferences/1-resolution/1.2-unit-propagation.json:3"
+          }
+        ]
+      }
     },
     {
       "id": 4,
       "premises": [
-        ["Not", "p_"],
-        ["Or", "p_", "q_"]
+        [
+          "Not",
+          "p_"
+        ],
+        [
+          "Or",
+          "p_",
+          "q_"
+        ]
       ],
       "constraints": [],
       "conclusion": "q_",
-      "description": "Resolve a negative unit clause against a positive literal in a binary clause."
+      "description": "Resolve a negative unit clause against a positive literal in a binary clause.",
+      "provenance": {
+        "method": "authored",
+        "sources": [
+          {
+            "name": "OpenSymbolicRules Logic",
+            "locator": "inferences/1-resolution/1.2-unit-propagation.json:4"
+          }
+        ]
+      }
     },
     {
       "id": 5,
       "premises": [
-        ["Or", "q_", ["Not", "p_"]],
+        [
+          "Or",
+          "q_",
+          [
+            "Not",
+            "p_"
+          ]
+        ],
         "p_"
       ],
       "constraints": [],
       "conclusion": "q_",
-      "description": "Resolve a positive unit clause when the complementary literal is on the right."
+      "description": "Resolve a positive unit clause when the complementary literal is on the right.",
+      "provenance": {
+        "method": "authored",
+        "sources": [
+          {
+            "name": "OpenSymbolicRules Logic",
+            "locator": "inferences/1-resolution/1.2-unit-propagation.json:5"
+          }
+        ]
+      }
     },
     {
       "id": 6,
       "premises": [
-        ["Or", "q_", "p_"],
-        ["Not", "p_"]
+        [
+          "Or",
+          "q_",
+          "p_"
+        ],
+        [
+          "Not",
+          "p_"
+        ]
       ],
       "constraints": [],
       "conclusion": "q_",
-      "description": "Resolve a negative unit clause when the complementary literal is on the right."
+      "description": "Resolve a negative unit clause when the complementary literal is on the right.",
+      "provenance": {
+        "method": "authored",
+        "sources": [
+          {
+            "name": "OpenSymbolicRules Logic",
+            "locator": "inferences/1-resolution/1.2-unit-propagation.json:6"
+          }
+        ]
+      }
     }
   ]
 }

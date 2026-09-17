@@ -32,7 +32,16 @@
           "q_"
         ]
       ],
-      "description": "De Morgan's law for the negation of a conjunction."
+      "description": "De Morgan's law for the negation of a conjunction.",
+      "provenance": {
+        "method": "authored",
+        "sources": [
+          {
+            "name": "OpenSymbolicRules Logic",
+            "locator": "logic:2-negation/2.2-negation-normal-form:14"
+          }
+        ]
+      }
     },
     {
       "id": 15,
@@ -56,7 +65,16 @@
           "q_"
         ]
       ],
-      "description": "De Morgan's law for the negation of a disjunction."
+      "description": "De Morgan's law for the negation of a disjunction.",
+      "provenance": {
+        "method": "authored",
+        "sources": [
+          {
+            "name": "OpenSymbolicRules Logic",
+            "locator": "logic:2-negation/2.2-negation-normal-form:15"
+          }
+        ]
+      }
     },
     {
       "id": 16,
@@ -66,7 +84,16 @@
       ],
       "constraints": [],
       "result": "False",
-      "description": "The negation of true is false."
+      "description": "The negation of true is false.",
+      "provenance": {
+        "method": "authored",
+        "sources": [
+          {
+            "name": "OpenSymbolicRules Logic",
+            "locator": "logic:2-negation/2.2-negation-normal-form:16"
+          }
+        ]
+      }
     },
     {
       "id": 17,
@@ -76,7 +103,16 @@
       ],
       "constraints": [],
       "result": "True",
-      "description": "The negation of false is true."
+      "description": "The negation of false is true.",
+      "provenance": {
+        "method": "authored",
+        "sources": [
+          {
+            "name": "OpenSymbolicRules Logic",
+            "locator": "logic:2-negation/2.2-negation-normal-form:17"
+          }
+        ]
+      }
     }
   ],
   "identity": "logic:2-negation/2.2-negation-normal-form"

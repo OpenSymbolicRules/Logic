@@ -26,7 +26,16 @@
         ],
         "q_"
       ],
-      "description": "An implication is a disjunction with a negated antecedent."
+      "description": "An implication is a disjunction with a negated antecedent.",
+      "provenance": {
+        "method": "authored",
+        "sources": [
+          {
+            "name": "OpenSymbolicRules Logic",
+            "locator": "logic:4-connectives/4.1-derived-connectives:22"
+          }
+        ]
+      }
     },
     {
       "id": 23,
@@ -55,7 +64,16 @@
           "p_"
         ]
       ],
-      "description": "Logical equivalence is the conjunction of its two implication-free directions."
+      "description": "Logical equivalence is the conjunction of its two implication-free directions.",
+      "provenance": {
+        "method": "authored",
+        "sources": [
+          {
+            "name": "OpenSymbolicRules Logic",
+            "locator": "logic:4-connectives/4.1-derived-connectives:23"
+          }
+        ]
+      }
     }
   ],
   "identity": "logic:4-connectives/4.1-derived-connectives"

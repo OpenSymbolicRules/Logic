@@ -21,7 +21,16 @@
       ],
       "constraints": [],
       "result": "p_",
-      "description": "Negating a proposition twice returns that proposition."
+      "description": "Negating a proposition twice returns that proposition.",
+      "provenance": {
+        "method": "authored",
+        "sources": [
+          {
+            "name": "OpenSymbolicRules Logic",
+            "locator": "logic:2-negation/2.1-complements:11"
+          }
+        ]
+      }
     },
     {
       "id": 12,
@@ -35,7 +44,16 @@
       ],
       "constraints": [],
       "result": "True",
-      "description": "A proposition disjoined with its complement is true."
+      "description": "A proposition disjoined with its complement is true.",
+      "provenance": {
+        "method": "authored",
+        "sources": [
+          {
+            "name": "OpenSymbolicRules Logic",
+            "locator": "logic:2-negation/2.1-complements:12"
+          }
+        ]
+      }
     },
     {
       "id": 13,
@@ -49,7 +67,16 @@
       ],
       "constraints": [],
       "result": "False",
-      "description": "A proposition conjoined with its complement is false."
+      "description": "A proposition conjoined with its complement is false.",
+      "provenance": {
+        "method": "authored",
+        "sources": [
+          {
+            "name": "OpenSymbolicRules Logic",
+            "locator": "logic:2-negation/2.1-complements:13"
+          }
+        ]
+      }
     }
   ],
   "identity": "logic:2-negation/2.1-complements"

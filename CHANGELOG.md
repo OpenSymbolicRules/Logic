@@ -26,6 +26,7 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 - Exhaustive propositional semantic verification of rules, fixtures, and
   resolution inferences in CI.
 - JSON Schema validation, executable fixtures, and Boolean-rule documentation.
+- Machine-readable provenance for every rule.
 - A gitallow `.gitignore`, so that the byproducts of running the verifier stay
   out of the working tree.
 

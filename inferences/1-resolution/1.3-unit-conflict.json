@@ -12,21 +12,45 @@
       "id": 7,
       "premises": [
         "p_",
-        ["Not", "p_"]
+        [
+          "Not",
+          "p_"
+        ]
       ],
       "constraints": [],
       "conclusion": "False",
-      "description": "Complementary unit clauses derive a contradiction."
+      "description": "Complementary unit clauses derive a contradiction.",
+      "provenance": {
+        "method": "authored",
+        "sources": [
+          {
+            "name": "OpenSymbolicRules Logic",
+            "locator": "inferences/1-resolution/1.3-unit-conflict.json:7"
+          }
+        ]
+      }
     },
     {
       "id": 8,
       "premises": [
-        ["Not", "p_"],
+        [
+          "Not",
+          "p_"
+        ],
         "p_"
       ],
       "constraints": [],
       "conclusion": "False",
-      "description": "Complementary unit clauses derive a contradiction regardless of premise order."
+      "description": "Complementary unit clauses derive a contradiction regardless of premise order.",
+      "provenance": {
+        "method": "authored",
+        "sources": [
+          {
+            "name": "OpenSymbolicRules Logic",
+            "locator": "inferences/1-resolution/1.3-unit-conflict.json:8"
+          }
+        ]
+      }
     }
   ]
 }

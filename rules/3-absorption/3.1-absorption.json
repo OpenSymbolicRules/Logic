@@ -20,7 +20,16 @@
       ],
       "constraints": [],
       "result": "p_",
-      "description": "A proposition absorbs its conjunction with another proposition."
+      "description": "A proposition absorbs its conjunction with another proposition.",
+      "provenance": {
+        "method": "authored",
+        "sources": [
+          {
+            "name": "OpenSymbolicRules Logic",
+            "locator": "logic:3-absorption/3.1-absorption:18"
+          }
+        ]
+      }
     },
     {
       "id": 19,
@@ -35,7 +44,16 @@
       ],
       "constraints": [],
       "result": "p_",
-      "description": "A proposition absorbs its conjunction with another proposition."
+      "description": "A proposition absorbs its conjunction with another proposition.",
+      "provenance": {
+        "method": "authored",
+        "sources": [
+          {
+            "name": "OpenSymbolicRules Logic",
+            "locator": "logic:3-absorption/3.1-absorption:19"
+          }
+        ]
+      }
     },
     {
       "id": 20,
@@ -50,7 +68,16 @@
       ],
       "constraints": [],
       "result": "p_",
-      "description": "A proposition absorbs its disjunction with another proposition."
+      "description": "A proposition absorbs its disjunction with another proposition.",
+      "provenance": {
+        "method": "authored",
+        "sources": [
+          {
+            "name": "OpenSymbolicRules Logic",
+            "locator": "logic:3-absorption/3.1-absorption:20"
+          }
+        ]
+      }
     },
     {
       "id": 21,
@@ -65,7 +92,16 @@
       ],
       "constraints": [],
       "result": "p_",
-      "description": "A proposition absorbs its disjunction with another proposition."
+      "description": "A proposition absorbs its disjunction with another proposition.",
+      "provenance": {
+        "method": "authored",
+        "sources": [
+          {
+            "name": "OpenSymbolicRules Logic",
+            "locator": "logic:3-absorption/3.1-absorption:21"
+          }
+        ]
+      }
     }
   ],
   "identity": "logic:3-absorption/3.1-absorption"
