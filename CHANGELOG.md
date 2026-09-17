@@ -25,6 +25,16 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 - JSON Schema validation, executable fixtures, and Boolean-rule documentation.
 - A gitallow `.gitignore`, so that the byproducts of running the verifier stay
   out of the working tree.
+
+### Fixed
+
+- Instantiate a wildcard with the bound variables of a rule's binder, not only
+  with Boolean constants.  A body that cannot depend on the binder verified
+  every quantifier rule vacuously.
+- Decide a rule's side conditions during verification, and refuse a constraint
+  the verifier cannot model.  `constraints` were read from the rule file and
+  then ignored, so a rule valid only under a side condition was reported as
+  verified unconditionally.
 - Quantifier scope rules merging two universals over a conjunction and two
   existentials over a disjunction when their variable lists agree.
 - A specification of scope, alpha-equivalence, and capture-avoiding substitution
