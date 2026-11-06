@@ -1,5 +1,5 @@
 {"strategy":
- {"seeds": 39,
+ {"seeds": 46,
   "profiles":
   {"to_dnf":
    {"termination":
@@ -117,7 +117,11 @@
      "logic.connective.nand",
      "logic.connective.nor",
      "logic.connective.xor",
-     "logic.connective.xnor"],
+     "logic.connective.xnor",
+     "logic.quantifier.not_forall",
+     "logic.quantifier.not_exists",
+     "logic.quantifier.forall_and",
+     "logic.quantifier.exists_or"],
     "max_steps": 6}},
   "fuel": 64,
   "engine":
@@ -126,45 +130,33 @@
  "osr_format": "1.0.0-alpha.1",
  "not_migrated":
  [{"reason":
-   "quantifiers (quant1#forall, quant1#exists) bind variables; the fragment has no binders",
-   "legacy_id": "logic:6-quantifiers/6.1-negation:32"},
-  {"reason":
-   "quantifiers (quant1#forall, quant1#exists) bind variables; the fragment has no binders",
-   "legacy_id": "logic:6-quantifiers/6.1-negation:33"},
-  {"reason":
-   "quantifiers (quant1#forall, quant1#exists) bind variables; the fragment has no binders",
-   "legacy_id": "logic:6-quantifiers/6.2-scope:34"},
-  {"reason":
-   "quantifiers (quant1#forall, quant1#exists) bind variables; the fragment has no binders",
-   "legacy_id": "logic:6-quantifiers/6.2-scope:35"},
-  {"reason":
-   "quantifiers (quant1#forall, quant1#exists) bind variables; the fragment has no binders",
+   "the side condition FreeQ (a variable does not occur free) has no OpenMath symbol, so the rule cannot be stated in v1 without inventing one",
    "legacy_id": "logic:6-quantifiers/6.2-scope:36"},
   {"reason":
-   "quantifiers (quant1#forall, quant1#exists) bind variables; the fragment has no binders",
+   "the side condition FreeQ (a variable does not occur free) has no OpenMath symbol, so the rule cannot be stated in v1 without inventing one",
    "legacy_id": "logic:6-quantifiers/6.2-scope:37"},
   {"reason":
-   "quantifiers (quant1#forall, quant1#exists) bind variables; the fragment has no binders",
+   "the side condition FreeQ (a variable does not occur free) has no OpenMath symbol, so the rule cannot be stated in v1 without inventing one",
    "legacy_id": "logic:6-quantifiers/6.2-scope:38"},
   {"reason":
-   "quantifiers (quant1#forall, quant1#exists) bind variables; the fragment has no binders",
+   "the side condition FreeQ (a variable does not occur free) has no OpenMath symbol, so the rule cannot be stated in v1 without inventing one",
    "legacy_id": "logic:6-quantifiers/6.2-scope:39"}],
  "metrics":
- {"rules_with_findings": 2,
-  "rules_not_migrated": 8,
-  "rules_migrated": 31,
-  "rules_exported": 31,
+ {"rules_with_findings": 6,
+  "rules_not_migrated": 4,
+  "rules_migrated": 35,
+  "rules_exported": 35,
   "julia_execution":
   "not measured by the exporter; see OpenSymbolicRules.jl test/test_osr_v1.jl",
   "boolean":
   {"unsupported": 0,
    "unproved": 0,
-   "proved": 31,
+   "proved": 35,
    "counterexample": 0,
-   "certified": 31,
+   "certified": 35,
    "blocked_by_mapping_assurance": 0}},
  "build":
  {"source_digest":
-  "sha256:306a1b65a6a083415dfc469a218fac8fd3004cc5c8c981320ccb02a838737304",
+  "sha256:7992c5b278b1af1117e2a36b3144a2221482abf8637b408d515ffea4c9cbf370",
   "mathlib_revision": "56a005855ea17e0b0958f73ec801ae140b0a1679",
   "lean_toolchain": "leanprover/lean4:v4.35.0"}}
