@@ -53,7 +53,7 @@ jobs:
       - uses: actions/checkout@v7
         with:
           repository: OpenSymbolicRules/Verification
-          ref: ed6195de7070645dc2029742ecc1e259e2e57d7a
+          ref: 3971c840be17b91238ba9bc66de5b92bf4e2ddf3
           path: verification
       - uses: actions/setup-python@v7
         with:
