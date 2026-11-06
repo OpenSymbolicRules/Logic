@@ -42,3 +42,21 @@ jobs:
         run: python3 scripts/test_verify_propositional_semantics.py
       - name: Verify propositional semantics
         run: python3 scripts/verify_propositional_semantics.py
+
+  v1:
+    name: Check generated OSR v1 files
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v7
+        with:
+          submodules: recursive
+      - uses: actions/checkout@v7
+        with:
+          repository: OpenSymbolicRules/Verification
+          ref: 71e70c87db827c813df9d9316dad661a284fb00e
+          path: verification
+      - uses: actions/setup-python@v7
+        with:
+          python-version: "3.12"
+      - run: python -m pip install check-jsonschema==0.38.0
+      - run: scripts/check-v1.sh "verification/reports/$(python3 -c 'import json; print(json.load(open("v1/logic.report.json"))["build"]["source_digest"].removeprefix("sha256:"))')"

@@ -9,6 +9,11 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ### Added
 
+- OSR v1 rule set and verification report in `v1/` (the 31 propositional
+  rules, proved in `OpenSymbolicRules/Lean` in the boolean domain), copied
+  from the published `OpenSymbolicRules/Verification` report, with a CI check
+  of schema validity, source digest and byte identity (`scripts/check-v1.sh`).
+
 - CI validation that every operator used by a rule has a declared OpenMath
   semantic mapping.
 
@@ -52,3 +57,7 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 - A specification of scope, alpha-equivalence, and capture-avoiding substitution
   for the quantifier binders, including which further quantifier rules it makes
   expressible as rewrites and why instantiation belongs in an inference profile.
+
+### Changed
+
+- Updated the Specification submodule to the OSR v1 draft (boolean domain).

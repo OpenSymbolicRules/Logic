@@ -60,6 +60,16 @@ The validation command checks the OSR JSON Schemas and validates the rule and
 test data against them. The semantic verifier exhaustively checks the supported
 propositional rules and resolution inferences over Boolean valuations.
 
+## OSR v1
+
+`v1/` holds the propositional rules in the OSR v1 format, generated from Lean
+proofs (`OpenSymbolicRules/Lean`) and published by
+`OpenSymbolicRules/Verification`.  See [docs/osr-v1.md](docs/osr-v1.md).
+Check it with:
+```bash
+just v1 [<Verification report directory>]
+```
+
 ## License
 
 This repository is licensed under the [MIT License](LICENSE). OpenMath
