@@ -6,7 +6,7 @@ generated, never edited by hand:
 
 | File | Content |
 |---|---|
-| `v1/logic.osr.json` | 35 rules: OpenMath patterns over `logic1` and `quant1` (as `OMBIND`), profiles, and verification records in the `boolean` domain. |
+| `v1/logic.osr.json` | All 39 rules: OpenMath patterns over `logic1` and `quant1` (as `OMBIND`), profiles, and verification records in the `boolean` domain. |
 | `v1/logic.report.json` | Machine-readable audit: metrics, the rules not migrated, and the termination proof of every profile. |
 | `v1/logic.report.md` | The same audit for humans. |
 
@@ -26,14 +26,13 @@ generated, never edited by hand:
 The v0.1 files in `rules/` and `inferences/` remain for the v0.1 loader of
 OpenSymbolicRules.jl.  In v1:
 
-- 35 rules are proved and certified in the `boolean` domain (carrier
-  `setname2#Boolean`): the 31 propositional ones and 4 quantifier rules
-  (negation of a quantifier, merging of two universals or existentials).
-  Quantifiers range over the truth values, as in the v0.1 tests, and bind one
-  variable (v0.1 binds a sequence; a sequence is a chain of binders);
-- the 4 rules with a `FreeQ` condition (vacuous quantifiers, moving a
-  quantifier past an independent operand) are not migrated: "variable not
-  free" has no OpenMath symbol.  The report lists them;
+- all 39 rules are proved and certified in the `boolean` domain (carrier
+  `setname2#Boolean`).  Quantifiers range over the truth values, as in the
+  v0.1 tests, and bind one variable (v0.1 binds a sequence; a sequence is a
+  chain of binders);
+- `FreeQ` side conditions become `independent` matching constraints: the
+  subterm matched by the metavariable must not mention the bound variable,
+  which an engine checks syntactically;
 - the profiles `default`, `to_cnf` and `to_dnf` are proved to terminate under
   the reference strategy (Lean `OSR.Logic.default_terminates`,
   `cnf_terminates`, `dnf_terminates`);

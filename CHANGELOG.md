@@ -9,8 +9,8 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ### Added
 
-- OSR v1 rule set and verification report in `v1/` (35 rules, quantifiers
-  included, proved in `OpenSymbolicRules/Lean` in the boolean domain), copied
+- OSR v1 rule set and verification report in `v1/` (all 39 rules,
+  quantifiers included, proved in `OpenSymbolicRules/Lean` in the boolean domain), copied
   from the published `OpenSymbolicRules/Verification` report, with a CI check
   of schema validity, source digest and byte identity (`scripts/check-v1.sh`).
 
