@@ -59,7 +59,7 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
   expressible as rewrites and why instantiation belongs in an inference profile.
 
 ### Changed
-- Refresh the generated OSR v1 files from Lean source digest `aca727e3…`
+- Refresh the generated OSR v1 files from Lean source digest `a6036490…`
   (Integration rules with residual integrals; this set is unchanged).
 - Refresh the generated OSR v1 files from Lean source digest `be6f672a…`
   (Integration rules with conditions; this set is unchanged).
