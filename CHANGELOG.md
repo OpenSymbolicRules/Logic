@@ -8,6 +8,8 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 ## [Unreleased]
 
 ### Added
+- v1 artifacts refreshed from Verification report `577cca61…` (the
+  Integration audit grows to 156 rules; this rule set is unchanged).
 
 - OSR v1 rule set and verification report in `v1/` (all 39 rules,
   quantifiers included, proved in `OpenSymbolicRules/Lean` in the boolean domain), copied
