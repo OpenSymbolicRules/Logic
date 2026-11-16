@@ -8,6 +8,8 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 ## [Unreleased]
 
 ### Added
+- v1 artifacts refreshed from Verification report `86e9259d…` (the
+  Integration audit grows to 401 rules; this rule set is unchanged).
 - v1 artifacts refreshed from Verification report `4a53a417…` (the
   Integration audit grows to 394 rules; this rule set is unchanged).
 - v1 artifacts refreshed from Verification report `5eeda009…` (the
