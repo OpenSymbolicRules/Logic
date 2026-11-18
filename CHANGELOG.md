@@ -8,6 +8,8 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 ## [Unreleased]
 
 ### Added
+- v1 artifacts refreshed from Verification report `d285fa25…` (six more
+  Integration rules; this rule set is unchanged).
 - v1 artifacts refreshed from Verification report `7f700cf4…` (eight more
   Integration rules; this rule set is unchanged).
 - v1 artifacts refreshed from Verification report `bba020e2…` (two more
