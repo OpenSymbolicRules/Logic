@@ -149,6 +149,6 @@
    "blocked_by_mapping_assurance": 0}},
  "build":
  {"source_digest":
-  "sha256:3067be61826b86134c3a61442161494131e1c30b23836361c602cb156544cecb",
+  "sha256:0300f8401db18c4f224a7650460de9f1f2d3cfe0f17fcd776a2d9015fe910714",
   "mathlib_revision": "56a005855ea17e0b0958f73ec801ae140b0a1679",
   "lean_toolchain": "leanprover/lean4:v4.35.0"}}
